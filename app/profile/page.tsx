@@ -1,5 +1,6 @@
 "use client";
-import { Download, ArrowLeft, Mail, Phone, MapPin, Globe } from "lucide-react";
+import { useState, useRef } from "react";
+import { Download, ArrowLeft, Mail, Phone, MapPin, Globe, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { translations } from "@/lib/i18n";
 import "./profile-print.css";
@@ -8,20 +9,67 @@ export default function ProfilePage() {
   const t = translations.en;
   const exp = t.experience.items;
   const projects = t.projects.items;
+  const sheetRef = useRef<HTMLElement>(null);
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = async () => {
+    if (!sheetRef.current || downloading) return;
+    setDownloading(true);
+    try {
+      const [{ default: html2canvas }, { default: jsPDF }] = await Promise.all([
+        import("html2canvas"),
+        import("jspdf"),
+      ]);
+
+      const node = sheetRef.current;
+      const canvas = await html2canvas(node, {
+        scale: 2,
+        backgroundColor: "#ffffff",
+        useCORS: true,
+        windowWidth: node.scrollWidth,
+        windowHeight: node.scrollHeight,
+      });
+
+      const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+      const pageW = pdf.internal.pageSize.getWidth();
+      const pageH = pdf.internal.pageSize.getHeight();
+      const imgW = pageW;
+      const imgH = (canvas.height * imgW) / canvas.width;
+
+      let heightLeft = imgH;
+      let position = 0;
+      const imgData = canvas.toDataURL("image/jpeg", 0.95);
+
+      pdf.addImage(imgData, "JPEG", 0, position, imgW, imgH);
+      heightLeft -= pageH;
+
+      while (heightLeft > 0) {
+        position = heightLeft - imgH;
+        pdf.addPage();
+        pdf.addImage(imgData, "JPEG", 0, position, imgW, imgH);
+        heightLeft -= pageH;
+      }
+
+      pdf.save("Phan-Dinh-Nhat-Profile.pdf");
+    } finally {
+      setDownloading(false);
+    }
+  };
 
   return (
     <div className="profile-page">
-      {/* Action bar — hidden when printing */}
+      {/* Action bar */}
       <div className="action-bar no-print">
         <Link href="/" className="action-btn action-btn-ghost">
           <ArrowLeft size={14} /> Back to site
         </Link>
-        <button onClick={() => window.print()} className="action-btn action-btn-primary">
-          <Download size={14} /> Download / Print PDF
+        <button onClick={handleDownload} disabled={downloading} className="action-btn action-btn-primary">
+          {downloading ? <Loader2 size={14} className="spin" /> : <Download size={14} />}
+          {downloading ? "Generating PDF…" : "Download PDF"}
         </button>
       </div>
 
-      <main className="profile-sheet">
+      <main ref={sheetRef} className="profile-sheet">
         {/* Header */}
         <header className="profile-header">
           <div>
