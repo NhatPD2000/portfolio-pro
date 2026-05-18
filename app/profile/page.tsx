@@ -33,21 +33,49 @@ export default function ProfilePage() {
       const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
       const pageW = pdf.internal.pageSize.getWidth();
       const pageH = pdf.internal.pageSize.getHeight();
-      const imgW = pageW;
-      const imgH = (canvas.height * imgW) / canvas.width;
+      const margin = 12; // mm — header/footer breathing room
+      const contentW = pageW - margin * 2;
+      const contentH = pageH - margin * 2;
+      const pxPerMm = canvas.width / contentW;
+      const contentH_px = Math.floor(contentH * pxPerMm);
+      const scanUp_px = Math.floor(60 * pxPerMm); // scan up to 60mm for a safe break
 
-      let heightLeft = imgH;
-      let position = 0;
-      const imgData = canvas.toDataURL("image/jpeg", 0.95);
+      const ctx = canvas.getContext("2d")!;
+      // Scan upward from a target Y until we find a row that's nearly all white
+      const findSafeBreak = (idealY: number, minY: number): number => {
+        const start = Math.min(idealY, canvas.height - 1);
+        const limit = Math.max(minY + 20, start - scanUp_px);
+        for (let y = start; y >= limit; y--) {
+          const row = ctx.getImageData(0, y, canvas.width, 1).data;
+          let nonWhite = 0;
+          for (let i = 0; i < row.length; i += 4) {
+            if (row[i] < 248 || row[i + 1] < 248 || row[i + 2] < 248) {
+              nonWhite++;
+              if (nonWhite > 2) break;
+            }
+          }
+          if (nonWhite <= 2) return y;
+        }
+        return start;
+      };
 
-      pdf.addImage(imgData, "JPEG", 0, position, imgW, imgH);
-      heightLeft -= pageH;
+      let y = 0;
+      let firstPage = true;
+      while (y < canvas.height) {
+        let endY = Math.min(y + contentH_px, canvas.height);
+        if (endY < canvas.height) {
+          endY = findSafeBreak(endY, y);
+        }
+        const slice = document.createElement("canvas");
+        slice.width = canvas.width;
+        slice.height = endY - y;
+        slice.getContext("2d")!.drawImage(canvas, 0, -y);
+        const sliceH_mm = slice.height / pxPerMm;
 
-      while (heightLeft > 0) {
-        position = heightLeft - imgH;
-        pdf.addPage();
-        pdf.addImage(imgData, "JPEG", 0, position, imgW, imgH);
-        heightLeft -= pageH;
+        if (!firstPage) pdf.addPage();
+        pdf.addImage(slice.toDataURL("image/jpeg", 0.95), "JPEG", margin, margin, contentW, sliceH_mm);
+        firstPage = false;
+        y = endY;
       }
 
       pdf.save("Phan-Dinh-Nhat-Profile.pdf");
