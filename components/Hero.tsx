@@ -235,6 +235,23 @@ export default function Hero() {
             </motion.div>
 
             <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="flex flex-wrap gap-3 mb-12"
+            >
+              <a
+                href="/profile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-primary flex items-center justify-center gap-2 px-7 py-3 bg-[#4F46E5] hover:bg-[#3730A3] text-white font-semibold rounded-lg text-sm"
+              >
+                <FileText size={15} />
+                View Profile (PDF)
+              </a>
+            </motion.div>
+
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.68 }}

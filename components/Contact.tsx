@@ -7,7 +7,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/lib/i18n";
 
 const contactItemsBase = [
-  { icon: Mail,   key: "Email" as const,    value: "phandinhnhat806@gmail.com", href: "mailto:phandinhnhat806@gmail.com" },
+  { icon: Mail,   key: "Email" as const,    value: "aes.dinhnhat@aesvietnam.com", href: "mailto:aes.dinhnhat@aesvietnam.com" },
   { icon: Phone,  key: "Phone" as const,    value: "(+84) 899 227 940",         href: "tel:+84899227940" },
   { icon: MapPin, key: "Location" as const, value: "Ho Chi Minh City, Vietnam",  href: null },
 ];
@@ -154,7 +154,7 @@ export default function Contact() {
               </div>
 
               <a
-                href="mailto:phandinhnhat806@gmail.com"
+                href="mailto:aes.dinhnhat@aesvietnam.com"
                 className="relative inline-flex items-center gap-2 px-6 py-3 bg-[#4F46E5] hover:bg-[#3730A3] text-white font-semibold rounded-lg transition-colors duration-200 w-fit text-sm"
               >
                 {t.sendMessage}
