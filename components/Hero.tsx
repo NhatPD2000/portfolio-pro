@@ -179,21 +179,6 @@ export default function Hero() {
 
           {/* LEFT COLUMN */}
           <div>
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="flex items-center gap-2 mb-5"
-            >
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#4F46E5] opacity-60" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#4F46E5]" />
-              </span>
-              <span className="text-xs text-[var(--text-secondary)] font-medium tracking-wide">
-                {t.status}
-              </span>
-            </motion.div>
-
             <motion.p
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}

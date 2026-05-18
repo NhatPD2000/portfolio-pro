@@ -93,12 +93,6 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <a
-            href="#contact"
-            className="hidden md:block px-5 py-2 text-xs font-semibold tracking-widest uppercase text-white bg-[#4F46E5] hover:bg-[#3730A3] rounded-md transition-all duration-200 hover:shadow-lg hover:shadow-[#4F46E5]/30 hover:-translate-y-0.5"
-          >
-            {t.hireMe}
-          </a>
           <button
             className="md:hidden text-[#4A5E7A] dark:text-[#B0BFDA] p-1 hover:text-[#0D1B2E] dark:hover:text-[#E8EDF8] transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}

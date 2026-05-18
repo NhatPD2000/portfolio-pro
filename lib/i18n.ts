@@ -66,8 +66,8 @@ const en = {
     viewProjects: "View Projects",
     downloadCV: "Download CV",
     stats: [
-      { value: "3+", label: "Years"     },
-      { value: "2",  label: "Companies" },
+      { value: "4+", label: "Years"     },
+      { value: "4",  label: "Companies" },
       { value: "5+", label: "Projects"  },
       { value: "3",  label: "Languages" },
     ],
@@ -76,7 +76,7 @@ const en = {
       title: "BA Delivery Process",
       stepOf: (current: number, total: number) => `Step ${current} / ${total}`,
       endLabel: "End-to-end BA delivery",
-      activeLabel: "AES Vietnam · Active",
+      activeLabel: "SFSV - Smart Factory Solution Vietnam · Active",
       steps: [
         { num: "01", title: "Requirement Gathering", hint: "Workshops · BRS · Interviews" },
         { num: "02", title: "Analysis & BPMN",       hint: "Process mapping · FIT/GAP"    },
@@ -169,7 +169,7 @@ const en = {
     screens: "screens",
     items: [
       {
-        num: "01", company: "AES Vietnam", role: "Business Analyst",
+        num: "01", company: "SFSV - Smart Factory Solution Vietnam", role: "Business Analyst",
         period: "April 2024 – Present", location: "Ho Chi Minh City",
         current: true,
         keyResult: "3 factory go-lives · 15% operational efficiency gain · 2 MES projects delivered end-to-end",
@@ -242,7 +242,7 @@ const en = {
         ],
       } as ExperienceData,
       {
-        num: "03", company: "Four Hands LLC (Văn phòng Đại diện)", role: "Business Intelligence Analyst",
+        num: "03", company: "Four Hands LLC", role: "Business Intelligence Analyst",
         period: "September 2022 – May 2023", location: "Ho Chi Minh City",
         current: false,
         keyResult: "Power BI dashboards delivered · Supply chain data quality improved ahead of product relaunch",
@@ -291,24 +291,6 @@ const en = {
     approach: "BA Approach",
     results: "Results",
     items: [
-      {
-        title: "Apriso MES & MRP for Fuji Electric Malaysia",
-        subtitle: "On-site survey, Fit-Gap analysis, and Apriso solution design for semiconductor manufacturing",
-        period: "Jan 2026 – Present",
-        challenge: "Fuji Electric Malaysia (FEM) runs three disconnected systems — SAP as system-of-record, a legacy in-house ERP Suite for shop floor execution, and i-Merge bridging Excel-based plans from Japan. Manual spreadsheet reconciliation caused inventory discrepancies (chênh hàng nghìn pcs), paper Travel Sheets and handwritten Material Request Forms hid traceability gaps (~20% qty deltas), and twice-weekly planning cycles lacked real-time visibility. FEM needs a unified Apriso MES + MRP platform to digitize production execution and consolidate planning.",
-        approach: [
-          "Researched Apriso / Delmia capabilities — Operation Steps, Material Genealogy, Maintenance Autonomous Checklist, Resource modeling — and mapped them to FEM's semiconductor production workflows (IGBT modules)",
-          "Conducted a 10-day on-site survey at FEM's Malaysia plant across three streams: Business Process, IoT / PLC discovery, and SAP ↔ Apriso Integration",
-          "Documented As-Is process flows for Pre-process (Pencil Drawing, Brushing, Pin Insert, Terminal Press) and Assembly (Yamaha YSM10 Chip Mounter, Vacuum Soldering) using BPMN swimlane diagrams",
-          "Performed Fit-Gap analysis between FEM's current workflows and Apriso standard capabilities, identifying customization scope and SAP integration touchpoints (Stock, GR, Wafer receive, Material balance)",
-          "Captured 27 documented findings with severity rating, 50+ machine evidence photos, and stakeholder interviews to inform To-Be solution design and BRD drafting",
-        ],
-        results: [
-          { metric: "10 days", label: "On-site survey at FEM Malaysia"      },
-          { metric: "27",      label: "Findings documented with severity"   },
-          { metric: "3",       label: "Streams: Business · IoT · Integration"},
-        ],
-      },
       {
         title: "Spartronics Manufacturing Execution System",
         subtitle: "Custom MES — built from scratch with IoT integration",
@@ -425,8 +407,8 @@ const vi: typeof en = {
     viewProjects: "Xem Dự Án",
     downloadCV: "Tải CV",
     stats: [
-      { value: "3+", label: "Năm"      },
-      { value: "2",  label: "Công ty"  },
+      { value: "4+", label: "Năm"      },
+      { value: "4",  label: "Công ty"  },
       { value: "5+", label: "Dự án"    },
       { value: "3",  label: "Ngôn ngữ" },
     ],
@@ -435,7 +417,7 @@ const vi: typeof en = {
       title: "Quy trình BA",
       stepOf: (current: number, total: number) => `Bước ${current} / ${total}`,
       endLabel: "Quy trình BA end-to-end",
-      activeLabel: "AES Vietnam · Đang hoạt động",
+      activeLabel: "SFSV - Smart Factory Solution Vietnam · Đang hoạt động",
       steps: [
         { num: "01", title: "Thu thập Yêu cầu",   hint: "Workshops · BRS · Phỏng vấn"    },
         { num: "02", title: "Phân tích & BPMN",    hint: "Lập quy trình · FIT/GAP"        },
@@ -528,7 +510,7 @@ const vi: typeof en = {
     screens: "màn hình",
     items: [
       {
-        num: "01", company: "AES Vietnam", role: "Business Analyst",
+        num: "01", company: "SFSV - Smart Factory Solution Vietnam", role: "Business Analyst",
         period: "Tháng 4/2024 – Nay", location: "TP. Hồ Chí Minh",
         current: true,
         keyResult: "3 nhà máy go-live · Tăng 15% hiệu suất vận hành · 2 dự án MES hoàn thiện end-to-end",
@@ -601,7 +583,7 @@ const vi: typeof en = {
         ],
       } as ExperienceData,
       {
-        num: "03", company: "Four Hands LLC (Văn phòng Đại diện)", role: "Business Intelligence Analyst",
+        num: "03", company: "Four Hands LLC", role: "Business Intelligence Analyst",
         period: "Tháng 9/2022 – Tháng 5/2023", location: "TP. Hồ Chí Minh",
         current: false,
         keyResult: "Dashboard Power BI hoàn thành · Chất lượng dữ liệu chuỗi cung ứng được cải thiện trước khi tái ra mắt sản phẩm",
@@ -650,24 +632,6 @@ const vi: typeof en = {
     approach: "Quy trình BA",
     results: "Kết quả",
     items: [
-      {
-        title: "Apriso MES & MRP cho Fuji Electric Malaysia",
-        subtitle: "Khảo sát onsite, phân tích Fit-Gap và thiết kế giải pháp Apriso cho sản xuất bán dẫn",
-        period: "Tháng 1/2026 – Nay",
-        challenge: "Fuji Electric Malaysia (FEM) đang vận hành 3 hệ thống rời rạc — SAP làm system-of-record, ERP Suite nội bộ cho sàn sản xuất, và i-Merge cầu nối kế hoạch Excel từ Nhật. Reconcile thủ công giữa các spreadsheet gây lệch tồn kho (chênh hàng nghìn pcs), Travel Sheet giấy và Material Request Form viết tay che giấu gap truy nguyên (~20% chênh số lượng), và chu kỳ planning 2 lần/tuần không có visibility thời gian thực. FEM cần một nền tảng Apriso MES + MRP thống nhất để số hóa thực thi sản xuất và hợp nhất planning.",
-        approach: [
-          "Nghiên cứu năng lực Apriso / Delmia — Operation Steps, Material Genealogy, Maintenance Autonomous Checklist, Resource modeling — và map vào quy trình sản xuất bán dẫn (IGBT modules) của FEM",
-          "Tổ chức khảo sát onsite 10 ngày tại nhà máy FEM Malaysia trên 3 luồng: Business Process, IoT / PLC discovery, và Tích hợp SAP ↔ Apriso",
-          "Lập As-Is process flow cho khu Pre-process (Pencil Drawing, Brushing, Pin Insert, Terminal Press) và Assembly (Yamaha YSM10 Chip Mounter, Vacuum Soldering) bằng BPMN swimlane",
-          "Phân tích Fit-Gap giữa workflow hiện tại của FEM và năng lực chuẩn của Apriso, xác định scope tùy chỉnh và các điểm tích hợp SAP (Stock, GR, Wafer receive, Material balance)",
-          "Tổng hợp 27 finding kèm severity, 50+ ảnh evidence máy/quy trình, và phỏng vấn stakeholder để định hướng thiết kế To-Be và dự thảo BRD",
-        ],
-        results: [
-          { metric: "10 ngày", label: "Khảo sát onsite tại FEM Malaysia"        },
-          { metric: "27",      label: "Findings tài liệu hóa kèm severity"       },
-          { metric: "3",       label: "Luồng: Business · IoT · Integration"      },
-        ],
-      },
       {
         title: "Spartronics Manufacturing Execution System",
         subtitle: "MES tùy chỉnh — xây dựng từ đầu với tích hợp IoT",

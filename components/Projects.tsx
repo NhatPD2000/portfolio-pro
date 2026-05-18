@@ -202,28 +202,8 @@ function ArtifactsPanel({ artifacts }: { artifacts: Artifacts }) {
 // Static config: icons, screenshots, tags, company/client names (non-translatable)
 const PROJECT_CONFIG = [
   {
-    id: "fuji", num: "01", icon: CircuitBoard, logo: "/fuji-logo.svg",
-    company: "AES Vietnam", client: "Fuji Electric Malaysia",
-    screenshots: [
-      { src: "/fuji/1.jpg", alt: "Fuji Electric Malaysia — Site survey 1", objectPosition: "object-center" },
-      { src: "/fuji/2.jpg", alt: "Fuji Electric Malaysia — Site survey 2", objectPosition: "object-center" },
-      { src: "/fuji/3.jpg", alt: "Fuji Electric Malaysia — Site survey 3", objectPosition: "object-center" },
-    ],
-    tags: ["Apriso","MES / MOM","MRP","Fit-Gap","Site Survey","Semiconductor","BPMN","SAP Integration"],
-    artifacts: {
-      figma: "",
-      mockups: [
-        { src: "/fuji/4.jpg", caption: "Site survey 4" },
-        { src: "/fuji/5.jpg", caption: "Site survey 5" },
-        { src: "/fuji/6.jpg", caption: "Site survey 6" },
-        { src: "/fuji/7.jpg", caption: "Site survey 7" },
-      ],
-      diagrams: [],
-    } as Artifacts,
-  },
-  {
-    id: "smes", num: "02", icon: Factory, logo: "/spartronics-logo.png",
-    company: "AES Vietnam", client: "Spartronics",
+    id: "smes", num: "01", icon: Factory, logo: "/spartronics-logo.png",
+    company: "SFSV - Smart Factory Solution Vietnam", client: "Spartronics",
     screenshots: [
       { src: "/spartronics/image 150.png", alt: "SMES System Interface" },
       { src: "/spartronics/z7785206000113_5dcfb02404ef84a459ab4d8ad929b913.jpg", alt: "SMES Production Dashboard", objectPosition: "object-center" },
@@ -244,8 +224,8 @@ const PROJECT_CONFIG = [
     } as Artifacts,
   },
   {
-    id: "pnj", num: "03", icon: Zap, logo: "/pnj-logo.png",
-    company: "AES Vietnam", client: "PNJ — Phu Nhuan Jewelry",
+    id: "pnj", num: "02", icon: Zap, logo: "/pnj-logo.png",
+    company: "SFSV - Smart Factory Solution Vietnam", client: "PNJ — Phu Nhuan Jewelry",
     screenshots: [
       { src: "/pnj-production.png", alt: "PNJ Production Execution Screen", url: "pnj-mes.apriso.com/production" },
       { src: "/pnj/z7786118722031_48798e639f8598f36b8d70faab31b7f5.jpg", alt: "PNJ Temperature Settings — Electroplating Tanks" },
@@ -266,8 +246,8 @@ const PROJECT_CONFIG = [
     } as Artifacts,
   },
   {
-    id: "unilever", num: "04", icon: Cpu, logo: "/unilever-logo.png",
-    company: "AES Vietnam", client: "Unilever",
+    id: "unilever", num: "03", icon: Cpu, logo: "/unilever-logo.png",
+    company: "SFSV - Smart Factory Solution Vietnam", client: "Unilever",
     screenshots: [
       { src: "/unilever/z7785199456681_01d637a3c9be9ec1bf279a54f4ea5655.jpg", alt: "Unilever Site Visit", objectPosition: "object-center" },
       { src: "/unilever/Nhà máy Unilever.png", alt: "Unilever Vietnam Factory — Aerial View", objectPosition: "object-center" },
