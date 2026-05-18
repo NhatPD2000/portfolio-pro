@@ -61,7 +61,7 @@ export default function Navbar() {
         <a href="#" className="flex items-center gap-2">
           <span className="font-serif text-base font-bold text-[#0D1B2E] dark:text-[#E8EDF8] tracking-wide">Phan Dinh Nhat</span>
           <span className="text-[10px] text-[#8999BB] dark:text-[#6B7E9A] tracking-[0.25em] uppercase hidden sm:block">
-            Portfolio
+            Profile
           </span>
         </a>
 

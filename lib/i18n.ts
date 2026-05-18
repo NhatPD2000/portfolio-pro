@@ -215,13 +215,13 @@ const en = {
       } as ExperienceData,
       {
         num: "02", company: "Lumos IS", role: "Business Analyst",
-        period: "Tháng 6/2023 – Tháng 3/2024", location: "TP. Hồ Chí Minh",
+        period: "June 2023 – March 2024", location: "Ho Chi Minh City",
         current: false,
         keyResult: "Full ERP delivered — requirements to UAT sign-off across Agile sprints",
         highlights: [
-          "Thu thập, tinh chỉnh và tài liệu hóa yêu cầu người dùng trong Business Requirement Specifications cho triển khai ERP",
-          "Xây dựng chức năng hệ thống ERP trên Oracle Apex sử dụng Agile — dashboard, báo cáo và tính năng tùy chỉnh theo yêu cầu khách hàng",
-          "Triển khai phần mềm trong các giai đoạn kiểm thử, cung cấp đào tạo người dùng cuối và giải quyết vấn đề hệ thống sau go-live",
+          "Gathered, refined, and documented user requirements in Business Requirement Specifications for ERP implementation",
+          "Built ERP system functionality on Oracle Apex using Agile — dashboards, reports, and custom features per client requirements",
+          "Deployed software through testing phases, delivered end-user training, and resolved post-go-live system issues",
         ],
         tags: ["ERP","Oracle Apex","Agile / Scrum","SQL","Power BI"],
         clients: [
@@ -556,13 +556,13 @@ const vi: typeof en = {
       } as ExperienceData,
       {
         num: "02", company: "Lumos IS", role: "Business Analyst",
-        period: "Tháng 6/2023 – Tháng 3/2024", location: "TP. Hồ Chí Minh",
+        period: "June 2023 – March 2024", location: "Ho Chi Minh City",
         current: false,
         keyResult: "Full ERP delivered — requirements to UAT sign-off across Agile sprints",
         highlights: [
-          "Thu thập, tinh chỉnh và tài liệu hóa yêu cầu người dùng trong Business Requirement Specifications cho triển khai ERP",
-          "Xây dựng chức năng hệ thống ERP trên Oracle Apex sử dụng Agile — dashboard, báo cáo và tính năng tùy chỉnh theo yêu cầu khách hàng",
-          "Triển khai phần mềm trong các giai đoạn kiểm thử, cung cấp đào tạo người dùng cuối và giải quyết vấn đề hệ thống sau go-live",
+          "Gathered, refined, and documented user requirements in Business Requirement Specifications for ERP implementation",
+          "Built ERP system functionality on Oracle Apex using Agile — dashboards, reports, and custom features per client requirements",
+          "Deployed software through testing phases, delivered end-user training, and resolved post-go-live system issues",
         ],
         tags: ["ERP","Oracle Apex","Agile / Scrum","SQL","Power BI"],
         clients: [
