@@ -53,11 +53,11 @@ const en = {
       { href: "#projects",   label: "Work"       },
       { href: "#contact",    label: "Contact"    },
     ],
-    hireMe: "Hire Me",
+    hireMe: "Discuss Your Project",
   },
 
   hero: {
-    status: "Open to opportunities",
+    status: "Available for project consultation",
     role: "Business Analyst",
     specialization: "Manufacturing Intelligence",
     taglineL1: "Turning complex factory operations into clear, digital systems.",

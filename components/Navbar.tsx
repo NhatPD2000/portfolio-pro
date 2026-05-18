@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
-import LanguageToggle from "./LanguageToggle";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/lib/i18n";
 
@@ -93,7 +92,6 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <LanguageToggle />
           <ThemeToggle />
           <a
             href="#contact"

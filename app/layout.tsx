@@ -12,26 +12,26 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Phan Dinh Nhat — Business Analyst",
+  title: "Phan Dinh Nhat — Business Analyst | MES & Manufacturing Consulting",
   description:
-    "Business Analyst specializing in MES/MOM, ERP systems, and manufacturing digitalization. 3+ years delivering factory go-lives, BPMN workflows, and IoT integrations.",
-  keywords: ["Business Analyst", "MES", "ERP", "Manufacturing", "Vietnam", "Agile", "BPMN", "IoT"],
+    "Senior Business Analyst delivering MES/MOM implementations, ERP integration and process digitalization for manufacturing clients. Proven 15% efficiency gains across factory go-lives.",
+  keywords: ["Business Analyst", "MES Consultant", "MOM", "ERP", "Manufacturing", "Apriso", "BPMN", "IoT Integration", "Factory Digitalization"],
   authors: [{ name: "Phan Dinh Nhat" }],
-  metadataBase: new URL("https://nhatphan2000.vercel.app"),
+  metadataBase: new URL("https://portfolio-pro.vercel.app"),
   openGraph: {
-    title: "Phan Dinh Nhat — Business Analyst",
+    title: "Phan Dinh Nhat — Business Analyst | MES & Manufacturing Consulting",
     description:
-      "3+ years in manufacturing tech — MES, ERP, IoT integrations and factory go-lives. Based in Ho Chi Minh City.",
-    url: "https://nhatphan2000.vercel.app",
-    siteName: "Phan Dinh Nhat Portfolio",
+      "MES/MOM implementations, ERP integration and process digitalization for manufacturing clients — from requirements to go-live.",
+    url: "https://portfolio-pro.vercel.app",
+    siteName: "Phan Dinh Nhat — Capability Profile",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Phan Dinh Nhat — Business Analyst",
+    title: "Phan Dinh Nhat — Business Analyst | MES Consulting",
     description:
-      "3+ years in manufacturing tech — MES, ERP, IoT integrations and factory go-lives.",
+      "MES/MOM implementations and ERP integration for manufacturing clients.",
   },
 };
 
