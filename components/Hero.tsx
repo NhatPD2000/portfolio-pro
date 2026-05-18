@@ -235,30 +235,6 @@ export default function Hero() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.58 }}
-              className="flex flex-col sm:flex-row gap-3 mb-14"
-            >
-              <a
-                href="#projects"
-                className="cta-primary flex items-center justify-center gap-2 px-7 py-3 bg-[#4F46E5] hover:bg-[#3730A3] text-white font-semibold rounded-lg text-sm"
-              >
-                <Layers size={15} />
-                {t.viewProjects}
-              </a>
-              <a
-                href="/phan-dinh-nhat-cv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta-secondary flex items-center justify-center gap-2 px-7 py-3 bg-[var(--bg-secondary)] border border-[var(--border)] hover:border-[var(--border-hover)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] font-medium rounded-lg text-sm"
-              >
-                <FileText size={15} />
-                {t.downloadCV}
-              </a>
-            </motion.div>
-
-            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.68 }}
