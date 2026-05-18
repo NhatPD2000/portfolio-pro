@@ -1,0 +1,74 @@
+<svg width="280" height="200" viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Isometric server/database blocks -->
+  <defs>
+    <linearGradient id="tech-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14B8A6;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:0.7" />
+    </linearGradient>
+    <linearGradient id="tech-grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#14B8A6;stop-opacity:0.6" />
+    </linearGradient>
+    <filter id="tech-glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base platform -->
+  <path d="M60 155 L140 115 L220 155 L140 195 Z" fill="#022C22" opacity="0.3"/>
+
+  <!-- Back server block -->
+  <g opacity="0.5">
+    <path d="M70 90 L110 70 L110 110 L70 130 Z" fill="url(#tech-grad2)"/>
+    <path d="M110 70 L150 90 L150 130 L110 110 Z" fill="#14B8A6" opacity="0.7"/>
+    <path d="M70 90 L110 70 L150 90 L110 110 Z" fill="url(#tech-grad1)" opacity="0.8"/>
+    <ellipse cx="110" cy="90" rx="40" ry="12" fill="#5EEAD4" opacity="0.4"/>
+  </g>
+
+  <!-- Main server block (large) -->
+  <g filter="url(#tech-glow)">
+    <path d="M90 110 L140 85 L140 155 L90 180 Z" fill="url(#tech-grad2)" opacity="0.9"/>
+    <path d="M140 85 L190 110 L190 180 L140 155 Z" fill="#14B8A6" opacity="0.8"/>
+    <path d="M90 110 L140 85 L190 110 L140 135 Z" fill="url(#tech-grad1)" opacity="0.9"/>
+
+    <!-- Database top -->
+    <ellipse cx="140" cy="110" rx="50" ry="15" fill="#5EEAD4" opacity="0.7"/>
+    <ellipse cx="140" cy="110" rx="50" ry="15" stroke="#2DD4BF" strokeWidth="1.5" fill="none" opacity="0.5"/>
+
+    <!-- Server lights/indicators -->
+    <line x1="100" y1="130" x2="110" y2="125" stroke="#5EEAD4" strokeWidth="2.5" opacity="0.9"/>
+    <line x1="100" y1="140" x2="110" y2="135" stroke="#5EEAD4" strokeWidth="2.5" opacity="0.8"/>
+    <line x1="100" y1="150" x2="110" y2="145" stroke="#5EEAD4" strokeWidth="2.5" opacity="0.7"/>
+
+    <line x1="170" y1="130" x2="180" y2="125" stroke="#5EEAD4" strokeWidth="2.5" opacity="0.9"/>
+    <line x1="170" y1="140" x2="180" y2="135" stroke="#5EEAD4" strokeWidth="2.5" opacity="0.8"/>
+    <line x1="170" y1="150" x2="180" y2="145" stroke="#5EEAD4" strokeWidth="2.5" opacity="0.7"/>
+  </g>
+
+  <!-- Small data blocks -->
+  <g opacity="0.6">
+    <path d="M180 80 L210 65 L210 90 L180 105 Z" fill="url(#tech-grad1)"/>
+    <path d="M210 65 L240 80 L240 105 L210 90 Z" fill="#06B6D4" opacity="0.7"/>
+    <path d="M180 80 L210 65 L240 80 L210 95 Z" fill="#14B8A6" opacity="0.8"/>
+  </g>
+
+  <!-- Cloud connection -->
+  <g opacity="0.5">
+    <path d="M200 50 Q210 45 220 50 Q225 48 225 55 Q220 60 210 58 Q200 60 195 55 Q195 50 200 50 Z" fill="#5EEAD4" opacity="0.4" stroke="#2DD4BF" strokeWidth="1"/>
+    <line x1="210" y1="58" x2="140" y2="85" stroke="#2DD4BF" strokeWidth="1" strokeDasharray="3 3" opacity="0.5"/>
+  </g>
+
+  <!-- Particles -->
+  <circle cx="50" cy="80" r="2" fill="#5EEAD4" opacity="0.7"/>
+  <circle cx="250" cy="110" r="2" fill="#5EEAD4" opacity="0.6"/>
+  <circle cx="70" cy="60" r="1.5" fill="#2DD4BF" opacity="0.8"/>
+  <circle cx="230" cy="50" r="1.5" fill="#2DD4BF" opacity="0.7"/>
+
+  <!-- Data flow lines -->
+  <line x1="120" y1="120" x2="120" y2="140" stroke="#5EEAD4" strokeWidth="1" strokeDasharray="2 2" opacity="0.4"/>
+  <line x1="160" y1="120" x2="160" y2="140" stroke="#5EEAD4" strokeWidth="1" strokeDasharray="2 2" opacity="0.4"/>
+</svg>

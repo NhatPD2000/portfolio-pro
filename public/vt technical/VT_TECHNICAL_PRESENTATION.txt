@@ -1,0 +1,184 @@
+================================================================================
+VT TECHNICAL - BUSINESS ANALYSIS IN ACTION
+Slide Presentation Format
+================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    BUSINESS ANALYSIS IN ACTION                              │
+│                         VT Technical ERP Project                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐
+│   🔴 THÁCH THỨC  │  │  🔵 QUY TRÌNH BA │  │   🟡 KẾT QUẢ     │
+│    CHALLENGE     │  │    BA PROCESS    │  │     RESULT       │
+└──────────────────┘  └──────────────────┘  └──────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 🔴 THÁCH THỨC (CHALLENGE)                                                    │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│ VT Technical - công ty cung cấp giải pháp kỹ thuật - đang gặp phải:        │
+│                                                                              │
+│ ❌ Quản lý bán hàng thủ công, dữ liệu rải rác                               │
+│ ❌ Không theo dõi được tồn kho real-time                                     │
+│ ❌ Không có quy trình chuẩn cho dịch vụ sau bán                             │
+│ ❌ Phê duyệt đơn hàng mất nhiều thời gian                                    │
+│ ❌ Không có dashboard để ra quyết định                                       │
+│                                                                              │
+│ 📉 TÁC ĐỘNG:                                                                 │
+│    • Doanh số không tăng trưởng                                             │
+│    • Chi phí vận hành cao                                                    │
+│    • Khách hàng không hài lòng                                              │
+│    • Không có visibility về kinh doanh                                       │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 🔵 QUY TRÌNH BA (BA PROCESS)                                                 │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│ 1️⃣ ELICITATION (Thu thập thông tin):                                        │
+│    • Phỏng vấn 15+ stakeholders từ Sales, Kho, Dịch vụ, Tài chính          │
+│    • Khảo sát quy trình hiện tại và xác định pain points                   │
+│    • Phân tích 2 năm dữ liệu lịch sử                                        │
+│    → Kết quả: 50+ functional requirements, 20+ non-functional               │
+│                                                                              │
+│ 2️⃣ ANALYSIS (Phân tích):                                                     │
+│    • Vẽ sơ đồ quy trình AS-IS và xác định bottleneck                       │
+│    • Thiết kế quy trình TO-BE tối ưu                                        │
+│    • Xây dựng mô hình dữ liệu và data flow                                  │
+│    → Kết quả: BRD (80 trang), FSD (150 trang), Process Diagrams            │
+│                                                                              │
+│ 3️⃣ SOLUTION DESIGN (Thiết kế giải pháp):                                    │
+│    • Đánh giá 5 ERP systems → Chọn Odoo ERP                                 │
+│    • Thiết kế 4 modules: Sales, Inventory, Service, Approval               │
+│    • Thiết kế UI/UX cho 50+ screens                                         │
+│    → Kết quả: SDD (120 trang), UI Mockups, Training Materials              │
+│                                                                              │
+│ 4️⃣ IMPLEMENTATION (Triển khai):                                             │
+│    • Phase 1-2: Cài đặt & cấu hình Sales/Inventory (Tháng 1-3)            │
+│    • Phase 3: Triển khai Service/Approval (Tháng 4)                        │
+│    • Phase 4: Testing (200+ test cases), UAT, Training, Go-live (Tháng 5) │
+│    → Kết quả: Hệ thống ERP hoạt động ổn định, 100% users được training     │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 🟡 KẾT QUẢ (RESULT)                                                          │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│ 📊 ĐỊNH LƯỢNG:                                                               │
+│                                                                              │
+│    ⬇️ Giảm 60% thời gian xử lý đơn hàng (5 ngày → 2 ngày)                   │
+│    ⬆️ Tăng 14% độ chính xác dữ liệu (85% → 99%)                             │
+│    ⬇️ Giảm 87% tồn kho không khớp (15% → 2%)                                 │
+│    ⬇️ Giảm 80% thời gian phê duyệt (3 ngày → 8 giờ)                         │
+│    ⬇️ Giảm 30% chi phí vận hành                                              │
+│    ⬆️ Tăng 25% doanh số bán hàng                                             │
+│    ⬆️ Tăng 22% khách hàng hài lòng (70% → 92%)                              │
+│                                                                              │
+│ ✅ ĐỊNH TÍNH:                                                                │
+│                                                                              │
+│    • Hệ thống tập trung, quản lý dễ dàng                                    │
+│    • Quy trình chuẩn hóa, giảm lỗi                                          │
+│    • Dashboard real-time hỗ trợ ra quyết định                               │
+│    • Tăng năng suất nhân viên                                               │
+│    • Cải thiện trải nghiệm khách hàng                                       │
+│                                                                              │
+│ 💰 ROI: 8 tháng                                                              │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 📈 BIỂU ĐỒ SO SÁNH TRƯỚC/SAU                                                │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│ Thời gian xử lý đơn hàng:                                                   │
+│ TRƯỚC: ████████████████████ (5 ngày)                                        │
+│ SAU:   ████████ (2 ngày)                                                    │
+│                                                                              │
+│ Độ chính xác dữ liệu:                                                       │
+│ TRƯỚC: █████████████████ (85%)                                              │
+│ SAU:   ███████████████████████ (99%)                                        │
+│                                                                              │
+│ Tồn kho không khớp:                                                         │
+│ TRƯỚC: ███████ (15%)                                                        │
+│ SAU:   █ (2%)                                                               │
+│                                                                              │
+│ Thời gian phê duyệt:                                                        │
+│ TRƯỚC: ████████████████████ (3 ngày)                                        │
+│ SAU:   ████ (8 giờ)                                                         │
+│                                                                              │
+│ Doanh số bán hàng:                                                          │
+│ TRƯỚC: ████████████████████ (Baseline)                                      │
+│ SAU:   █████████████████████████ (+25%)                                     │
+│                                                                              │
+│ Khách hàng hài lòng:                                                        │
+│ TRƯỚC: ██████████████ (70%)                                                 │
+│ SAU:   ██████████████████████ (92%)                                         │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 🎯 KEY TAKEAWAYS                                                             │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│ 1. Elicitation kỹ lưỡng là nền tảng thành công                             │
+│    → 15+ stakeholders, 2 năm dữ liệu, 50+ requirements                      │
+│                                                                              │
+│ 2. Phân tích và thiết kế chi tiết giúp tránh rủi ro                        │
+│    → BRD 80 trang, FSD 150 trang, SDD 120 trang                            │
+│                                                                              │
+│ 3. Lựa chọn công nghệ phù hợp với nhu cầu                                  │
+│    → Odoo ERP: Chi phí thấp, linh hoạt, phù hợp SME                        │
+│                                                                              │
+│ 4. Training và Change Management là chìa khóa                               │
+│    → 5 sessions, 200+ slides, 100% users trained                           │
+│                                                                              │
+│ 5. Testing kỹ lưỡng đảm bảo chất lượng                                     │
+│    → 200+ test cases, UAT với 30+ users                                    │
+│                                                                              │
+│ 6. Support mạnh mẽ sau go-live                                              │
+│    → 24/7 support trong 2 tuần, on-site team                               │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 📋 THÔNG TIN DỰ ÁN                                                          │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│ Khách hàng:    VT Technical Co., Ltd.                                       │
+│ Lĩnh vực:      Cung cấp giải pháp kỹ thuật                                  │
+│ Thời gian:     5 tháng (Tháng 1 - Tháng 5, 2026)                           │
+│ Ngân sách:     2 tỷ VND                                                     │
+│ Công nghệ:     Odoo ERP, PostgreSQL, AWS                                    │
+│ Modules:       Sales, Inventory, Service, Approval, Reporting              │
+│ Users:         50+ users                                                    │
+│ Trạng thái:    ✅ Hoàn thành thành công                                     │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ 💡 BÀI HỌC RÚT RA                                                           │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│ ✓ Stakeholder engagement từ đầu đến cuối                                   │
+│ ✓ Documentation chi tiết giúp tránh hiểu lầm                               │
+│ ✓ Phân chia phases rõ ràng giúp quản lý tốt                                │
+│ ✓ Testing không bao giờ là đủ - test nhiều hơn nữa                         │
+│ ✓ Change management quan trọng không kém technical                          │
+│ ✓ Support sau go-live quyết định thành công lâu dài                        │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+================================================================================
+                            END OF PRESENTATION
+================================================================================

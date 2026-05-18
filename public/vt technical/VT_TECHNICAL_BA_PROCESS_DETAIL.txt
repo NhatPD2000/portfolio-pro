@@ -1,0 +1,487 @@
+================================================================================
+VT TECHNICAL - QUY TRÌNH BA CHI TIẾT
+Business Analysis Process - Step by Step Guide
+================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    GIAI ĐOẠN 1: ELICITATION                                 │
+│                      (Thu thập thông tin)                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+TUẦN 1-2: CHUẨN BỊ & KHỞI ĐỘNG
+================================================================================
+
+Bước 1.1: Kick-off Meeting
+--------------------------
+Thời gian: 2 giờ
+Người tham gia: 
+  - CEO VT Technical
+  - Giám đốc Sales
+  - Giám đốc Kho
+  - Giám đốc Dịch vụ
+  - Giám đốc Tài chính
+  - BA Team (3 người)
+
+Nội dung:
+  ✓ Giới thiệu dự án và mục tiêu
+  ✓ Xác định phạm vi (scope)
+  ✓ Xác định timeline và budget
+  ✓ Xác định stakeholders chính
+  ✓ Lên lịch phỏng vấn
+
+Kết quả:
+  → Project Charter (5 trang)
+  → Stakeholder List (15 người)
+  → Interview Schedule (2 tuần)
+
+
+Bước 1.2: Phỏng vấn Stakeholders
+---------------------------------
+Thời gian: 2 tuần (15 phỏng vấn x 1.5 giờ/phỏng vấn)
+
+PHỎNG VẤN #1: Giám đốc Sales (Mr. Tuấn)
+Thời gian: 1.5 giờ
+Câu hỏi chính:
+  Q1: Quy trình bán hàng hiện tại như thế nào?
+  A1: "Hiện tại chúng tôi dùng Excel để quản lý khách hàng và đơn hàng. 
+       Mỗi sales có file Excel riêng, không có hệ thống chung."
+  
+  Q2: Pain points lớn nhất là gì?
+  A2: "Không biết được tình trạng đơn hàng real-time. Khách hàng hỏi 
+       phải gọi điện cho kho, rất mất thời gian."
+  
+  Q3: Mong muốn gì từ hệ thống mới?
+  A3: "Muốn có hệ thống tập trung, theo dõi được từ báo giá → đơn hàng 
+       → giao hàng → thanh toán. Dashboard để xem doanh số real-time."
+
+Pain Points được xác định:
+  ❌ Dữ liệu rải rác trên nhiều file Excel
+  ❌ Không theo dõi được trạng thái đơn hàng
+  ❌ Mất thời gian tra cứu thông tin
+  ❌ Không có báo cáo doanh số tự động
+  ❌ Khó phối hợp với bộ phận kho
+
+Requirements thu thập được:
+  ✓ FR-SALES-001: Quản lý khách hàng tập trung
+  ✓ FR-SALES-002: Quản lý báo giá
+  ✓ FR-SALES-003: Quản lý đơn hàng với trạng thái
+  ✓ FR-SALES-004: Dashboard doanh số real-time
+  ✓ FR-SALES-005: Tích hợp với module kho
+
+
+PHỎNG VẤN #2: Giám đốc Kho (Mr. Hùng)
+Thời gian: 1.5 giờ
+Câu hỏi chính:
+  Q1: Quy trình quản lý kho hiện tại?
+  A1: "Dùng sổ sách và Excel. Nhập/xuất kho ghi tay rồi nhập vào Excel 
+       cuối ngày. Thường xuyên sai số."
+  
+  Q2: Vấn đề lớn nhất?
+  A2: "Không biết tồn kho chính xác. Nhiều lần hứa giao hàng cho khách 
+       nhưng kiểm tra kho thì không đủ. Mất uy tín."
+  
+  Q3: Yêu cầu với hệ thống mới?
+  A3: "Cần theo dõi tồn kho real-time, cảnh báo khi hàng sắp hết, 
+       quản lý nhiều kho (3 kho hiện tại)."
+
+Pain Points:
+  ❌ Tồn kho không chính xác (sai số 15%)
+  ❌ Không có cảnh báo hàng sắp hết
+  ❌ Nhập/xuất kho thủ công, dễ sai
+  ❌ Không quản lý được nhiều kho
+  ❌ Kiểm kê mất nhiều thời gian
+
+Requirements:
+  ✓ FR-INV-001: Quản lý tồn kho real-time
+  ✓ FR-INV-002: Cảnh báo tồn kho min/max
+  ✓ FR-INV-003: Quản lý nhiều kho
+  ✓ FR-INV-004: Nhập/xuất kho tự động
+  ✓ FR-INV-005: Kiểm kê định kỳ
+
+
+PHỎNG VẤN #3: Giám đốc Dịch vụ (Ms. Lan)
+Thời gian: 1.5 giờ
+Pain Points:
+  ❌ Không có hệ thống quản lý ticket
+  ❌ Khách hàng gọi điện, không có lịch sử
+  ❌ Không theo dõi được SLA
+  ❌ Không có báo cáo dịch vụ
+
+Requirements:
+  ✓ FR-SVC-001: Ticket system
+  ✓ FR-SVC-002: Quản lý hợp đồng dịch vụ
+  ✓ FR-SVC-003: Lịch sử dịch vụ
+  ✓ FR-SVC-004: SLA tracking
+  ✓ FR-SVC-005: Báo cáo KPI dịch vụ
+
+
+[Tương tự cho 12 phỏng vấn còn lại...]
+
+
+Bước 1.3: Phân tích Dữ liệu Lịch sử
+------------------------------------
+Thời gian: 1 tuần
+
+Dữ liệu thu thập:
+  • 2 năm dữ liệu bán hàng (2024-2025)
+  • 2 năm dữ liệu kho
+  • 2 năm dữ liệu dịch vụ
+
+Phân tích:
+  📊 Doanh số bán hàng:
+     - 2024: 20 tỷ VND
+     - 2025: 20.5 tỷ VND (tăng 2.5% - rất thấp)
+     - Nguyên nhân: Mất khách do dịch vụ kém
+  
+  📊 Tồn kho:
+     - Sai số trung bình: 15%
+     - Hàng tồn kho lâu: 30% (6+ tháng)
+     - Hàng thiếu: 20 lần/năm
+  
+  📊 Dịch vụ:
+     - Thời gian xử lý ticket: 3-5 ngày
+     - Tỷ lệ khách hàng hài lòng: 70%
+     - Khách hàng rời bỏ: 15%/năm
+
+Insight:
+  💡 Vấn đề chính không phải là sản phẩm mà là quy trình
+  💡 Cần cải thiện tốc độ xử lý và chất lượng dịch vụ
+  💡 Tồn kho không hiệu quả làm tăng chi phí
+
+
+Bước 1.4: Khảo sát Quy trình Hiện tại (AS-IS)
+----------------------------------------------
+Thời gian: 3 ngày
+
+QUY TRÌNH BÁN HÀNG HIỆN TẠI:
+┌─────────────────────────────────────────────────────────────────────┐
+│ 1. Khách hàng liên hệ → Sales                                       │
+│    ↓ (Thời gian: 1 ngày)                                            │
+│ 2. Sales tạo báo giá trong Excel                                    │
+│    ↓ (Thời gian: 0.5 ngày)                                          │
+│ 3. Gửi email báo giá cho khách                                      │
+│    ↓ (Thời gian: 1-2 ngày chờ khách phản hồi)                      │
+│ 4. Khách đồng ý → Sales tạo đơn hàng trong Excel                   │
+│    ↓ (Thời gian: 0.5 ngày)                                          │
+│ 5. Sales gửi email đơn hàng cho Kho                                 │
+│    ↓ (Thời gian: 0.5 ngày)                                          │
+│ 6. Kho kiểm tra tồn kho thủ công                                    │
+│    ↓ (Thời gian: 0.5 ngày)                                          │
+│ 7. Nếu đủ hàng → Xuất kho, nếu không → Báo lại Sales              │
+│    ↓ (Thời gian: 1 ngày)                                            │
+│ 8. Giao hàng cho khách                                              │
+│    ↓ (Thời gian: 1 ngày)                                            │
+│ 9. Kế toán tạo hóa đơn                                              │
+│                                                                     │
+│ TỔNG THỜI GIAN: 5-7 NGÀY                                            │
+│ BOTTLENECK: Bước 5-7 (Phối hợp Sales-Kho qua email)                │
+└─────────────────────────────────────────────────────────────────────┘
+
+Vấn đề:
+  ❌ Quá nhiều bước thủ công
+  ❌ Phối hợp qua email chậm và dễ sai
+  ❌ Không có visibility về trạng thái
+  ❌ Khách hàng không biết đơn hàng đang ở đâu
+
+
+KẾT QUẢ GIAI ĐOẠN ELICITATION:
+================================================================================
+✓ 15 phỏng vấn hoàn thành
+✓ 50+ Functional Requirements
+✓ 20+ Non-Functional Requirements
+✓ AS-IS Process Diagrams (5 quy trình)
+✓ Data Analysis Report (30 trang)
+✓ Pain Points Summary (10 trang)
+
+Tài liệu:
+  → Requirements Document (80 trang)
+  → Stakeholder Analysis (15 trang)
+  → AS-IS Process Diagrams (10 trang)
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    GIAI ĐOẠN 2: ANALYSIS                                    │
+│                      (Phân tích & Thiết kế)                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+TUẦN 3-4: PHÂN TÍCH & THIẾT KẾ QUY TRÌNH MỚI
+================================================================================
+
+Bước 2.1: Phân tích Requirements
+---------------------------------
+Thời gian: 3 ngày
+
+Phân loại Requirements:
+  📌 MUST HAVE (Bắt buộc): 35 requirements
+     - Quản lý khách hàng, đơn hàng, tồn kho
+     - Báo cáo cơ bản
+     - Phê duyệt đơn hàng
+  
+  📌 SHOULD HAVE (Nên có): 20 requirements
+     - Dashboard real-time
+     - Ticket system
+     - Báo cáo nâng cao
+  
+  📌 COULD HAVE (Có thể có): 10 requirements
+     - Mobile app
+     - AI prediction
+     - Advanced analytics
+  
+  📌 WON'T HAVE (Không có trong phase 1): 5 requirements
+     - E-commerce integration
+     - CRM marketing automation
+
+Quyết định:
+  ✓ Phase 1: MUST HAVE + SHOULD HAVE (55 requirements)
+  ✓ Phase 2 (future): COULD HAVE
+
+
+Bước 2.2: Thiết kế Quy trình Mới (TO-BE)
+-----------------------------------------
+Thời gian: 5 ngày
+
+QUY TRÌNH BÁN HÀNG MỚI (TO-BE):
+┌─────────────────────────────────────────────────────────────────────┐
+│ 1. Khách hàng liên hệ → Sales                                       │
+│    ↓ (Thời gian: 0.5 ngày)                                          │
+│ 2. Sales tạo báo giá trong ERP (tự động tính giá, thuế)           │
+│    ↓ (Thời gian: 0.1 ngày)                                          │
+│ 3. Gửi báo giá qua email tự động từ ERP                            │
+│    ↓ (Thời gian: 1 ngày chờ khách)                                 │
+│ 4. Khách đồng ý → Sales chuyển báo giá thành đơn hàng (1 click)   │
+│    ↓ (Thời gian: 0.1 ngày)                                          │
+│ 5. ERP tự động kiểm tra tồn kho và thông báo cho Kho               │
+│    ↓ (Thời gian: 0.1 ngày)                                          │
+│ 6. Kho xác nhận và xuất kho trong ERP                              │
+│    ↓ (Thời gian: 0.2 ngày)                                          │
+│ 7. Giao hàng (cập nhật trạng thái trong ERP)                       │
+│    ↓ (Thời gian: 1 ngày)                                            │
+│ 8. ERP tự động tạo hóa đơn                                          │
+│                                                                     │
+│ TỔNG THỜI GIAN: 2 NGÀY (Giảm 60%)                                  │
+│ CẢI THIỆN: Tự động hóa, real-time visibility                        │
+└─────────────────────────────────────────────────────────────────────┘
+
+Lợi ích:
+  ✅ Giảm 60% thời gian xử lý
+  ✅ Giảm 90% lỗi do nhập liệu thủ công
+  ✅ Khách hàng theo dõi được trạng thái đơn hàng
+  ✅ Sales và Kho phối hợp seamless
+
+
+Bước 2.3: Xây dựng Mô hình Dữ liệu
+-----------------------------------
+Thời gian: 3 ngày
+
+ENTITIES CHÍNH:
+┌──────────────────────────────────────────────────────────────┐
+│ 1. Customer (Khách hàng)                                     │
+│    - customer_id (PK)                                        │
+│    - name, address, phone, email, tax_code                   │
+│    - customer_type (VIP, Regular, Potential)                 │
+│    - created_date, updated_date                              │
+│                                                              │
+│ 2. Product (Sản phẩm)                                        │
+│    - product_id (PK)                                         │
+│    - name, description, category, unit, price                │
+│    - barcode, image                                          │
+│    - created_date, updated_date                              │
+│                                                              │
+│ 3. Quotation (Báo giá)                                       │
+│    - quotation_id (PK)                                       │
+│    - customer_id (FK)                                        │
+│    - quotation_date, valid_until                             │
+│    - status (Draft, Sent, Approved, Rejected)                │
+│    - total_amount, discount, tax, grand_total                │
+│                                                              │
+│ 4. Order (Đơn hàng)                                          │
+│    - order_id (PK)                                           │
+│    - customer_id (FK), quotation_id (FK)                     │
+│    - order_date, delivery_date                               │
+│    - status (Draft, Confirmed, Processing, Delivered)        │
+│    - total_amount, discount, tax, grand_total                │
+│                                                              │
+│ 5. Warehouse (Kho)                                           │
+│    - warehouse_id (PK)                                       │
+│    - name, address, manager                                  │
+│                                                              │
+│ 6. Stock (Tồn kho)                                           │
+│    - stock_id (PK)                                           │
+│    - product_id (FK), warehouse_id (FK)                      │
+│    - quantity, min_quantity, max_quantity                    │
+│    - last_updated                                            │
+│                                                              │
+│ 7. Stock Movement (Nhập/Xuất kho)                           │
+│    - movement_id (PK)                                        │
+│    - product_id (FK), warehouse_id (FK)                      │
+│    - movement_type (In, Out, Adjustment)                     │
+│    - quantity, date, reference                               │
+│                                                              │
+│ 8. Service Contract (Hợp đồng dịch vụ)                      │
+│    - contract_id (PK)                                        │
+│    - customer_id (FK)                                        │
+│    - start_date, end_date, status                            │
+│                                                              │
+│ 9. Ticket (Yêu cầu hỗ trợ)                                   │
+│    - ticket_id (PK)                                          │
+│    - customer_id (FK), contract_id (FK)                      │
+│    - subject, description, priority                          │
+│    - status (New, In Progress, Resolved, Closed)             │
+│    - assigned_to, created_date, resolved_date                │
+└──────────────────────────────────────────────────────────────┘
+
+RELATIONSHIPS:
+  Customer 1 ─── N Quotation
+  Customer 1 ─── N Order
+  Quotation 1 ─── 1 Order
+  Order 1 ─── N Order_Line
+  Product 1 ─── N Order_Line
+  Product 1 ─── N Stock
+  Warehouse 1 ─── N Stock
+  Customer 1 ─── N Service_Contract
+  Customer 1 ─── N Ticket
+
+
+Bước 2.4: Viết Business Requirements Document (BRD)
+----------------------------------------------------
+Thời gian: 5 ngày
+
+BRD Structure (80 trang):
+  1. Executive Summary (5 trang)
+  2. Business Objectives (10 trang)
+  3. Current Situation (AS-IS) (15 trang)
+  4. Proposed Solution (TO-BE) (20 trang)
+  5. Requirements (30 trang)
+     - Functional Requirements
+     - Non-Functional Requirements
+     - Business Rules
+     - Constraints
+
+
+Bước 2.5: Viết Functional Specification Document (FSD)
+-------------------------------------------------------
+Thời gian: 10 ngày
+
+FSD Structure (150 trang):
+  1. Introduction (10 trang)
+  2. System Overview (15 trang)
+  3. Module Specifications (100 trang)
+     - Sales Module (25 trang)
+     - Inventory Module (25 trang)
+     - Service Module (25 trang)
+     - Approval Module (15 trang)
+     - Reporting Module (10 trang)
+  4. Data Model (15 trang)
+  5. Integration Requirements (10 trang)
+
+
+KẾT QUẢ GIAI ĐOẠN ANALYSIS:
+================================================================================
+✓ TO-BE Process Diagrams (5 quy trình)
+✓ Data Model (20 entities, 30 relationships)
+✓ Business Requirements Document (80 trang)
+✓ Functional Specification Document (150 trang)
+✓ Gap Analysis Report (20 trang)
+
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    GIAI ĐOẠN 3: SOLUTION DESIGN                             │
+│                      (Thiết kế Giải pháp)                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+TUẦN 5-6: LỰA CHỌN CÔNG NGHỆ & THIẾT KẾ CHI TIẾT
+================================================================================
+
+Bước 3.1: Đánh giá ERP Systems
+-------------------------------
+Thời gian: 5 ngày
+
+So sánh 5 giải pháp:
+
+┌────────────┬──────────┬────────────┬──────────┬────────────┬──────────┐
+│ Tiêu chí   │ SAP      │ Oracle     │ Odoo     │ NetSuite   │ Infor    │
+├────────────┼──────────┼────────────┼──────────┼────────────┼──────────┤
+│ Chi phí    │ ★☆☆☆☆    │ ★☆☆☆☆      │ ★★★★★    │ ★★★☆☆      │ ★★☆☆☆    │
+│ Tính năng  │ ★★★★★    │ ★★★★★      │ ★★★★☆    │ ★★★★☆      │ ★★★★☆    │
+│ Dễ dùng    │ ★★☆☆☆    │ ★★☆☆☆      │ ★★★★★    │ ★★★★☆      │ ★★★☆☆    │
+│ Linh hoạt  │ ★★★☆☆    │ ★★★☆☆      │ ★★★★★    │ ★★★☆☆      │ ★★★☆☆    │
+│ Hỗ trợ VN  │ ★★★★☆    │ ★★★☆☆      │ ★★★★★    │ ★★☆☆☆      │ ★★☆☆☆    │
+│ Triển khai │ 12-18th  │ 12-18th    │ 3-6th    │ 6-9th      │ 9-12th   │
+│ Giá        │ 5-10 tỷ  │ 5-10 tỷ    │ 1-3 tỷ   │ 3-5 tỷ     │ 4-6 tỷ   │
+└────────────┴──────────┴────────────┴──────────┴────────────┴──────────┘
+
+QUYẾT ĐỊNH: Odoo ERP
+Lý do:
+  ✅ Chi phí phù hợp với ngân sách (2 tỷ)
+  ✅ Đáp ứng đủ yêu cầu chức năng
+  ✅ Dễ sử dụng, training nhanh
+  ✅ Linh hoạt, dễ customize
+  ✅ Cộng đồng Việt Nam mạnh
+  ✅ Thời gian triển khai ngắn (5 tháng)
+
+
+Bước 3.2: Thiết kế Kiến trúc Hệ thống
+--------------------------------------
+Thời gian: 3 ngày
+
+KIẾN TRÚC TRIỂN KHAI:
+┌─────────────────────────────────────────────────────────────┐
+│                        USERS (50+)                          │
+│                            ↓                                │
+│                    Internet/VPN                             │
+│                            ↓                                │
+│              ┌─────────────────────────┐                    │
+│              │   AWS Load Balancer     │                    │
+│              └─────────────────────────┘                    │
+│                            ↓                                │
+│              ┌─────────────────────────┐                    │
+│              │   Nginx Web Server      │                    │
+│              └─────────────────────────┘                    │
+│                            ↓                                │
+│              ┌─────────────────────────┐                    │
+│              │   Odoo Application      │                    │
+│              │   (AWS EC2 t3.large)    │                    │
+│              └─────────────────────────┘                    │
+│                            ↓                                │
+│              ┌─────────────────────────┐                    │
+│              │   PostgreSQL Database   │                    │
+│              │   (AWS RDS)             │                    │
+│              └─────────────────────────┘                    │
+│                            ↓                                │
+│              ┌─────────────────────────┐                    │
+│              │   File Storage          │                    │
+│              │   (AWS S3)              │                    │
+│              └─────────────────────────┘                    │
+└─────────────────────────────────────────────────────────────┘
+
+
+Bước 3.3: Thiết kế UI/UX
+-------------------------
+Thời gian: 7 ngày
+
+Thiết kế 50+ screens:
+  • Dashboard (5 screens)
+  • Sales Module (15 screens)
+  • Inventory Module (15 screens)
+  • Service Module (10 screens)
+  • Approval Module (5 screens)
+
+Nguyên tắc thiết kế:
+  ✓ Simple & Clean
+  ✓ Responsive (Desktop, Tablet, Mobile)
+  ✓ Tiếng Việt
+  ✓ Accessibility
+
+
+KẾT QUẢ GIAI ĐOẠN SOLUTION DESIGN:
+================================================================================
+✓ Technology Selection Report (30 trang)
+✓ System Design Document (120 trang)
+✓ UI/UX Mockups (50+ screens)
+✓ Data Migration Plan (25 trang)
+✓ Training Materials (200+ slides)
+
+
+================================================================================
+                            KẾT THÚC TÀI LIỆU
+================================================================================

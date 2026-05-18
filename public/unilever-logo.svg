@@ -1,0 +1,13 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Unilever Logo - U shape -->
+  <defs>
+    <linearGradient id="uGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#003DA5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066CC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- U shape -->
+  <path d="M 50 40 L 50 130 Q 50 160 80 160 L 120 160 Q 150 160 150 130 L 150 40" fill="none" stroke="url(#uGradient)" stroke-width="20" stroke-linecap="round"/>
+  <!-- Text -->
+  <text x="100" y="185" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">UNILEVER</text>
+</svg>

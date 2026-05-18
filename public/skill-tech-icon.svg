@@ -1,0 +1,45 @@
+<svg width="200" height="180" viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tech: Code/Database themed -->
+  <defs>
+    <linearGradient id="tech-fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background glow -->
+  <circle cx="100" cy="100" r="80" fill="url(#tech-fill)" opacity="0.5"/>
+
+  <!-- Database cylinder -->
+  <g opacity="0.7">
+    <ellipse cx="100" cy="70" rx="35" ry="10" fill="none" stroke="#4F46E5" strokeWidth="1.5"/>
+    <line x1="65" y1="70" x2="65" y2="100" stroke="#4F46E5" strokeWidth="1.5"/>
+    <line x1="135" y1="70" x2="135" y2="100" stroke="#4F46E5" strokeWidth="1.5"/>
+    <ellipse cx="100" cy="100" rx="35" ry="10" fill="none" stroke="#4F46E5" strokeWidth="1.5"/>
+  </g>
+
+  <!-- Code brackets -->
+  <g opacity="0.6">
+    <path d="M60 120 L50 130 L60 140" stroke="#4F46E5" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M140 120 L150 130 L140 140" stroke="#4F46E5" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+  </g>
+
+  <!-- Code lines -->
+  <g opacity="0.5">
+    <line x1="75" y1="125" x2="95" y2="125" stroke="#4F46E5" strokeWidth="1"/>
+    <line x1="75" y1="130" x2="125" y2="130" stroke="#4F46E5" strokeWidth="1"/>
+    <line x1="75" y1="135" x2="110" y2="135" stroke="#4F46E5" strokeWidth="1"/>
+  </g>
+
+  <!-- Server indicator lights -->
+  <g opacity="0.7">
+    <circle cx="80" cy="85" r="2" fill="#4F46E5"/>
+    <circle cx="90" cy="85" r="2" fill="#4F46E5" opacity="0.6"/>
+    <circle cx="100" cy="85" r="2" fill="#4F46E5" opacity="0.4"/>
+  </g>
+
+  <!-- Floating dots -->
+  <circle cx="45" cy="145" r="2" fill="#4F46E5" opacity="0.5"/>
+  <circle cx="155" cy="65" r="1.5" fill="#4F46E5" opacity="0.4"/>
+  <circle cx="165" cy="135" r="1" fill="#4F46E5" opacity="0.3"/>
+</svg>

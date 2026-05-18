@@ -1,0 +1,324 @@
+================================================================================
+VT TECHNICAL ERP - DANH SÁCH SCREENSHOT CHO PORTFOLIO (RÀ SOÁT LẠI)
+================================================================================
+
+TỔNG QUAN:
+- Tổng cộng: 686 hình ảnh trích xuất từ PDF 120 trang
+- Hình ảnh hệ thống lớn: 198 ảnh (width > 1000, height > 500)
+- Hình ảnh được chọn: 30 ảnh chất lượng cao nhất
+- Định dạng: PNG
+- Thư mục: c:\Nhat\Dự án\Portfolio\portfolio\public\vt technical\screenshots
+
+================================================================================
+TOP 30 SCREENSHOT CHẤT LƯỢNG CAO (ĐÃ RÀ SOÁT)
+================================================================================
+
+NHÓM 1: DASHBOARD & TỔNG QUAN (Trang 1-10)
+==========================================
+Mục đích: Hiển thị giao diện chính, tổng quan hệ thống
+Số lượng: 3 ảnh
+
+Không có screenshot chất lượng cao từ nhóm này trong top 30.
+Gợi ý: Sử dụng các ảnh từ nhóm khác làm dashboard.
+
+---
+
+NHÓM 2: QUẢN LÝ KHO (Trang 11-30)
+=================================
+Mục đích: Hiển thị chức năng quản lý kho, tồn kho, nhập xuất
+Số lượng: 6 ảnh
+
+✓ 8. screenshot_page021_img03.png
+   Kích thước: 1917x858 | Chất lượng: Xuất sắc | Độ sáng: 228/255
+   Mô tả: Danh sách kho hàng, vị trí, tồn kho
+   Điểm nổi bật: Bố cục rõ ràng, dễ tìm kiếm
+
+✓ 10. screenshot_page022_img03.png
+   Kích thước: 1901x864 | Chất lượng: Xuất sắc | Độ sáng: 227/255
+   Mô tả: Chi tiết kho hàng, vị trí, dung tích
+   Điểm nổi bật: Bố cục logic, dễ quản lý
+
+✓ 15. screenshot_page015_img04.png
+   Kích thước: 1900x859 | Chất lượng: Xuất sắc | Độ sáng: 230/255
+   Mô tả: Báo cáo kho, tồn kho chi tiết
+   Điểm nổi bật: Dữ liệu chi tiết, hỗ trợ quyết định
+
+✓ 21. screenshot_page014_img03.png
+   Kích thước: 1895x857 | Chất lượng: Rất tốt | Độ sáng: 239/255
+   Mô tả: Quản lý vị trí kho
+   Điểm nổi bật: Giao diện sạch, chuyên nghiệp
+
+✓ 22. screenshot_page015_img03.png
+   Kích thước: 1895x857 | Chất lượng: Rất tốt | Độ sáng: 239/255
+   Mô tả: Phân tích kho
+   Điểm nổi bật: Biểu đồ trực quan
+
+✓ 24. screenshot_page019_img04.png
+   Kích thước: 1890x858 | Chất lượng: Rất tốt | Độ sáng: 230/255
+   Mô tả: Nhập xuất kho
+   Điểm nổi bật: Form đơn giản, dễ sử dụng
+
+---
+
+NHÓM 3: QUẢN LÝ BÁN HÀNG (Trang 31-50)
+======================================
+Mục đích: Hiển thị quy trình bán hàng, đơn hàng, khách hàng
+Số lượng: 8 ảnh
+
+✓ 4. screenshot_page043_img04.png
+   Kích thước: 1920x871 | Chất lượng: Xuất sắc | Độ sáng: 241/255
+   Mô tả: Quản lý khách hàng
+   Điểm nổi bật: Giao diện chuyên nghiệp, dữ liệu tập trung
+
+✓ 6. screenshot_page036_img03.png
+   Kích thước: 1913x866 | Chất lượng: Xuất sắc | Độ sáng: 197/255
+   Mô tả: Danh sách đơn hàng
+   Điểm nổi bật: Tìm kiếm nhanh, lọc theo nhiều tiêu chí
+
+✓ 7. screenshot_page040_img04.png
+   Kích thước: 1899x871 | Chất lượng: Rất tốt | Độ sáng: 232/255
+   Mô tả: Chi tiết đơn hàng
+   Điểm nổi bật: Hiển thị đầy đủ, dễ chỉnh sửa
+
+✓ 11. screenshot_page035_img04.png
+   Kích thước: 1901x864 | Chất lượng: Xuất sắc | Độ sáng: 238/255
+   Mô tả: Báo cáo bán hàng
+   Điểm nổi bật: Phân tích chi tiết, hỗ trợ chiến lược
+
+✓ 16. screenshot_page043_img03.png
+   Kích thước: 1899x859 | Chất lượng: Rất tốt | Độ sáng: 241/255
+   Mô tả: Thống kê khách hàng
+   Điểm nổi bật: Dữ liệu phân tích
+
+✓ 17. screenshot_page039_img03.png
+   Kích thước: 1898x857 | Chất lượng: Rất tốt | Độ sáng: 233/255
+   Mô tả: Quản lý giá bán
+   Điểm nổi bật: Linh hoạt, hỗ trợ nhiều chính sách
+
+✓ 18. screenshot_page049_img04.png
+   Kích thước: 1898x857 | Chất lượng: Rất tốt | Độ sáng: 243/255
+   Mô tả: Thống kê doanh số
+   Điểm nổi bật: Biểu đồ trực quan, dễ so sánh
+
+✓ 26. screenshot_page039_img04.png
+   Kích thước: 1906x850 | Chất lượng: Xuất sắc | Độ sáng: 195/255
+   Mô tả: Báo cáo chi tiết bán hàng
+   Điểm nổi bật: Dữ liệu đầy đủ, định dạng chuyên nghiệp
+
+---
+
+NHÓM 4: QUẢN LÝ DỊCH VỤ (Trang 51-70)
+====================================
+Mục đích: Hiển thị quản lý dịch vụ, yêu cầu dịch vụ, hợp đồng
+Số lượng: 9 ảnh
+
+✓ 5. screenshot_page065_img04.png
+   Kích thước: 1898x878 | Chất lượng: Rất tốt | Độ sáng: 241/255
+   Mô tả: Chi tiết dịch vụ
+   Điểm nổi bật: Bố cục rõ ràng, dễ hiểu
+
+✓ 9. screenshot_page062_img04.png
+   Kích thước: 1920x856 | Chất lượng: Xuất sắc | Độ sáng: 244/255
+   Mô tả: Danh sách dịch vụ
+   Điểm nổi bật: Quản lý dịch vụ tập trung, dễ cập nhật
+
+✓ 12. screenshot_page063_img04.png
+   Kích thước: 1920x854 | Chất lượng: Xuất sắc | Độ sáng: 241/255
+   Mô tả: Báo cáo dịch vụ
+   Điểm nổi bật: Đánh giá hiệu suất dịch vụ
+
+✓ 14. screenshot_page057_img04.png
+   Kích thước: 1895x862 | Chất lượng: Rất tốt | Độ sáng: 170/255
+   Mô tả: Yêu cầu dịch vụ
+   Điểm nổi bật: Quản lý yêu cầu hiệu quả
+
+✓ 20. screenshot_page056_img04.png
+   Kích thước: 1905x853 | Chất lượng: Xuất sắc | Độ sáng: 183/255
+   Mô tả: Quản lý hợp đồng dịch vụ
+   Điểm nổi bật: Theo dõi hợp đồng, cảnh báo hết hạn
+
+✓ 23. screenshot_page059_img03.png
+   Kích thước: 1899x855 | Chất lượng: Rất tốt | Độ sáng: 239/255
+   Mô tả: Phân tích dịch vụ
+   Điểm nổi bật: Biểu đồ trực quan
+
+✓ 25. screenshot_page064_img04.png
+   Kích thước: 1884x860 | Chất lượng: Rất tốt | Độ sáng: 241/255
+   Mô tả: Báo cáo chi tiết dịch vụ
+   Điểm nổi bật: Dữ liệu chi tiết
+
+✓ 27. screenshot_page061_img04.png
+   Kích thước: 1887x857 | Chất lượng: Rất tốt | Độ sáng: 243/255
+   Mô tả: Quản lý giá dịch vụ
+   Điểm nổi bật: Linh hoạt, hỗ trợ nhiều chính sách
+
+✓ 28. screenshot_page053_img04.png
+   Kích thước: 1905x844 | Chất lượng: Rất tốt | Độ sáng: 242/255
+   Mô tả: Thống kê dịch vụ
+   Điểm nổi bật: Dữ liệu phân tích
+
+---
+
+NHÓM 5: QUẢN LÝ PHÊ DUYỆT (Trang 71-90)
+======================================
+Mục đích: Hiển thị workflow phê duyệt, quy trình duyệt
+Số lượng: 1 ảnh
+
+✓ 1. screenshot_page071_img04.png ⭐ **HÌNH ẢNH LỚN NHẤT**
+   Kích thước: 2500x1094 | Chất lượng: Xuất sắc | Độ sáng: 233/255
+   Mô tả: Workflow phê duyệt toàn bộ
+   Điểm nổi bật: Độ phân giải cao, chi tiết rõ ràng, phù hợp làm banner
+
+---
+
+NHÓM 6: BÁO CÁO & PHÂN TÍCH (Trang 91-120)
+==========================================
+Mục đích: Hiển thị báo cáo, biểu đồ, phân tích dữ liệu
+Số lượng: 3 ảnh
+
+✓ 2. screenshot_page115_img04.png ⭐ **CHẤT LƯỢNG CAO**
+   Kích thước: 1920x918 | Chất lượng: Xuất sắc | Độ sáng: 189/255
+   Mô tả: Báo cáo chi tiết
+   Điểm nổi bật: Giao diện hiện đại, bố cục cân đối
+
+✓ 3. screenshot_page113_img04.png
+   Kích thước: 1917x898 | Chất lượng: Xuất sắc | Độ sáng: 193/255
+   Mô tả: Báo cáo phân tích
+   Điểm nổi bật: Quy trình duyệt chi tiết, bố cục rõ ràng
+
+✓ 13. screenshot_page110_img03.png
+   Kích thước: 1913x856 | Chất lượng: Xuất sắc | Độ sáng: 238/255
+   Mô tả: Thống kê tổng hợp
+   Điểm nổi bật: Cung cấp cái nhìn toàn cảnh
+
+✓ 19. screenshot_page111_img03.png
+   Kích thước: 1901x855 | Chất lượng: Xuất sắc | Độ sáng: 207/255
+   Mô tả: Báo cáo chi tiết
+   Điểm nổi bật: Dữ liệu đầy đủ, định dạng chuyên nghiệp
+
+✓ 30. screenshot_page033_img04.png
+   Kích thước: 1920x836 | Chất lượng: Rất tốt | Độ sáng: 241/255
+   Mô tả: Báo cáo tổng hợp
+   Điểm nổi bật: Dữ liệu phân tích
+
+---
+
+NHÓM 29. screenshot_page054_img03.png
+   Kích thước: 1905x844 | Chất lượng: Rất tốt | Độ sáng: 242/255
+   Mô tả: Báo cáo dịch vụ chi tiết
+   Điểm nổi bật: Dữ liệu phân tích
+
+================================================================================
+THỐNG KÊ PHÂN BỐ 30 SCREENSHOT
+================================================================================
+
+Kho (6 ảnh):
+  - screenshot_page021_img03.png
+  - screenshot_page022_img03.png
+  - screenshot_page015_img04.png
+  - screenshot_page014_img03.png
+  - screenshot_page015_img03.png
+  - screenshot_page019_img04.png
+
+Bán hàng (8 ảnh):
+  - screenshot_page043_img04.png
+  - screenshot_page036_img03.png
+  - screenshot_page040_img04.png
+  - screenshot_page035_img04.png
+  - screenshot_page043_img03.png
+  - screenshot_page039_img03.png
+  - screenshot_page049_img04.png
+  - screenshot_page039_img04.png
+
+Dịch vụ (9 ảnh):
+  - screenshot_page065_img04.png
+  - screenshot_page062_img04.png
+  - screenshot_page063_img04.png
+  - screenshot_page057_img04.png
+  - screenshot_page056_img04.png
+  - screenshot_page059_img03.png
+  - screenshot_page064_img04.png
+  - screenshot_page061_img04.png
+  - screenshot_page053_img04.png
+
+Phê duyệt (1 ảnh):
+  - screenshot_page071_img04.png ⭐
+
+Báo cáo (5 ảnh):
+  - screenshot_page115_img04.png ⭐
+  - screenshot_page113_img04.png
+  - screenshot_page110_img03.png
+  - screenshot_page111_img03.png
+  - screenshot_page033_img04.png
+
+Khác (1 ảnh):
+  - screenshot_page054_img03.png
+
+================================================================================
+KHUYẾN NGHỊ SỬ DỤNG TRONG PORTFOLIO
+================================================================================
+
+CÁCH 1: Case Study Hoàn Chỉnh (8-10 ảnh)
+- Chọn 1-2 ảnh từ Kho
+- Chọn 2-3 ảnh từ Bán hàng
+- Chọn 2-3 ảnh từ Dịch vụ
+- Chọn 1 ảnh từ Phê duyệt
+- Chọn 1-2 ảnh từ Báo cáo
+
+CÁCH 2: Feature Showcase (6-8 ảnh)
+- Hero image: screenshot_page071_img04.png (2500x1094)
+- Supporting: 5-7 ảnh từ các module khác
+
+CÁCH 3: Interactive Gallery (15-20 ảnh)
+- Tạo carousel với tất cả 30 ảnh
+- Thêm navigation buttons
+- Hiển thị mô tả khi hover
+
+CÁCH 4: Module-based Showcase (5 phần)
+- Phần 1: Kho (3 ảnh)
+- Phần 2: Bán hàng (3 ảnh)
+- Phần 3: Dịch vụ (3 ảnh)
+- Phần 4: Phê duyệt (1 ảnh)
+- Phần 5: Báo cáo (2 ảnh)
+
+================================================================================
+CHẤT LƯỢNG HÌNH ẢNH
+================================================================================
+
+Xuất sắc (width >= 1900, height >= 850): 13 ảnh
+- Phù hợp nhất cho portfolio
+- Độ phân giải cao, chi tiết rõ ràng
+- Giao diện chuyên nghiệp
+
+Rất tốt (width >= 1800, height >= 800): 17 ảnh
+- Phù hợp cho portfolio
+- Độ phân giải tốt, chi tiết đủ
+- Giao diện sạch, chuyên nghiệp
+
+================================================================================
+KHUYẾN NGHỊ CHỈNH SỬA
+================================================================================
+
+1. Crop ảnh: Loại bỏ header/footer nếu cần
+2. Watermark: Thêm logo nếu chứa dữ liệu nhạy cảm
+3. Thumbnail: Tạo phiên bản 300x200 cho gallery
+4. Fullsize: Tạo phiên bản 1920x1080 cho modal
+5. Captions: Thêm mô tả ngắn cho mỗi ảnh
+6. Brightness: Điều chỉnh độ sáng nếu cần (hiện tại 170-244/255 - tốt)
+
+================================================================================
+THÔNG TIN KỸ THUẬT
+================================================================================
+
+Định dạng: PNG
+Tổng số ảnh: 30
+Kích thước tổng: ~150-200 MB
+Độ phân giải: 1890x836 đến 2500x1094
+Tỷ lệ khung hình: 2.09 - 2.30 (phù hợp cho web)
+Độ sáng trung bình: 170-244/255 (tốt, không quá sáng/tối)
+
+================================================================================
+Tạo ngày: 2026-05-03
+Dự án: VT Technical ERP
+Loại: Portfolio Screenshots (Rà soát lại)
+================================================================================

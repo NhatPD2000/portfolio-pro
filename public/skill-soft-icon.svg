@@ -1,0 +1,52 @@
+<svg width="200" height="180" viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Soft Skills: People/Communication themed -->
+  <defs>
+    <linearGradient id="soft-fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background glow -->
+  <circle cx="100" cy="100" r="80" fill="url(#soft-fill)" opacity="0.5"/>
+
+  <!-- People icons -->
+  <g opacity="0.7">
+    <!-- Left person -->
+    <circle cx="70" cy="80" r="10" fill="none" stroke="#FBBF24" strokeWidth="1.5"/>
+    <path d="M60 95 Q70 90 80 95" stroke="#FBBF24" strokeWidth="1.5" fill="none"/>
+
+    <!-- Right person -->
+    <circle cx="130" cy="80" r="10" fill="none" stroke="#FBBF24" strokeWidth="1.5"/>
+    <path d="M120 95 Q130 90 140 95" stroke="#FBBF24" strokeWidth="1.5" fill="none"/>
+  </g>
+
+  <!-- Connection line -->
+  <g opacity="0.6">
+    <line x1="80" y1="85" x2="120" y2="85" stroke="#FBBF24" strokeWidth="1" strokeDasharray="3 3"/>
+    <circle cx="100" cy="85" r="2" fill="#FBBF24"/>
+  </g>
+
+  <!-- Speech bubbles -->
+  <g opacity="0.6">
+    <rect x="50" y="110" width="30" height="20" rx="3" fill="none" stroke="#FBBF24" strokeWidth="1"/>
+    <path d="M60 130 L65 135 L70 130" stroke="#FBBF24" strokeWidth="1" fill="none"/>
+
+    <rect x="120" y="110" width="30" height="20" rx="3" fill="none" stroke="#FBBF24" strokeWidth="1"/>
+    <path d="M130 130 L135 135 L140 130" stroke="#FBBF24" strokeWidth="1" fill="none"/>
+  </g>
+
+  <!-- Message lines in bubbles -->
+  <g opacity="0.5">
+    <line x1="55" y1="117" x2="75" y2="117" stroke="#FBBF24" strokeWidth="0.5"/>
+    <line x1="55" y1="122" x2="70" y2="122" stroke="#FBBF24" strokeWidth="0.5"/>
+
+    <line x1="125" y1="117" x2="145" y2="117" stroke="#FBBF24" strokeWidth="0.5"/>
+    <line x1="125" y1="122" x2="140" y2="122" stroke="#FBBF24" strokeWidth="0.5"/>
+  </g>
+
+  <!-- Floating dots -->
+  <circle cx="45" cy="145" r="2" fill="#FBBF24" opacity="0.5"/>
+  <circle cx="155" cy="65" r="1.5" fill="#FBBF24" opacity="0.4"/>
+  <circle cx="165" cy="135" r="1" fill="#FBBF24" opacity="0.3"/>
+</svg>

@@ -1,0 +1,183 @@
+================================================================================
+VT TECHNICAL ERP - DANH SÁCH SCREENSHOT CHO PORTFOLIO
+================================================================================
+
+TỔNG QUAN:
+- Tổng cộng: 686 hình ảnh trích xuất
+- Hình ảnh hệ thống lớn: 198 ảnh (width > 1000, height > 500)
+- Định dạng: PNG
+- Thư mục: c:\Nhat\Dự án\Portfolio\portfolio\public\vt technical\screenshots
+
+================================================================================
+TOP 15 SCREENSHOT CHẤT LƯỢNG CAO CHO PORTFOLIO
+================================================================================
+
+NHÓM 1: DASHBOARD & TỔNG QUAN (Trang 1-10)
+-------------------------------------------
+Mục đích: Hiển thị giao diện chính, tổng quan hệ thống
+Khuyến nghị:
+  ✓ screenshot_page004_img03.png (1299x799) - Dashboard tổng quan
+  ✓ screenshot_page008_img03.png (1299x558) - Giao diện chính
+  ✓ screenshot_page009_img08.png (1299x568) - Màn hình tổng hợp
+
+NHÓM 2: QUẢN LÝ KHO (Trang 11-30)
+---------------------------------
+Mục đích: Hiển thị chức năng quản lý kho, tồn kho, nhập xuất
+Khuyến nghị:
+  ✓ screenshot_page021_img03.png (1917x858) - Danh sách kho
+  ✓ screenshot_page022_img03.png (1901x864) - Chi tiết kho
+  ✓ screenshot_page030_img04.png (1909x685) - Báo cáo kho
+  ✓ screenshot_page025_img03.png (1351x592) - Form nhập kho
+  ✓ screenshot_page026_img03.png (1350x584) - Form xuất kho
+
+NHÓM 3: QUẢN LÝ BÁN HÀNG (Trang 31-50)
+---------------------------------------
+Mục đích: Hiển thị quy trình bán hàng, đơn hàng, khách hàng
+Khuyến nghị:
+  ✓ screenshot_page036_img03.png (1913x866) - Danh sách đơn hàng
+  ✓ screenshot_page040_img04.png (1899x871) - Chi tiết đơn hàng
+  ✓ screenshot_page043_img04.png (1920x871) - Quản lý khách hàng
+  ✓ screenshot_page045_img03.png (1899x834) - Báo cáo bán hàng
+  ✓ screenshot_page049_img03.png (1903x833) - Thống kê doanh số
+
+NHÓM 4: QUẢN LÝ DỊCH VỤ (Trang 51-70)
+-------------------------------------
+Mục đích: Hiển thị quản lý dịch vụ, yêu cầu dịch vụ, hợp đồng
+Khuyến nghị:
+  ✓ screenshot_page062_img04.png (1920x856) - Danh sách dịch vụ
+  ✓ screenshot_page065_img04.png (1898x878) - Chi tiết dịch vụ
+  ✓ screenshot_page060_img04.png (1920x817) - Quản lý hợp đồng
+  ✓ screenshot_page057_img03.png (1920x824) - Yêu cầu dịch vụ
+  ✓ screenshot_page064_img03.png (1909x685) - Báo cáo dịch vụ
+
+NHÓM 5: QUẢN LÝ PHÊ DUYỆT (Trang 71-90)
+---------------------------------------
+Mục đích: Hiển thị workflow phê duyệt, quy trình duyệt
+Khuyến nghị:
+  ✓ screenshot_page071_img04.png (2500x1094) - Workflow phê duyệt (LỚN NHẤT)
+  ✓ screenshot_page113_img04.png (1917x898) - Quy trình duyệt
+  ✓ screenshot_page115_img04.png (1920x918) - Danh sách chờ duyệt
+  ✓ screenshot_page078_img03.png (1299x565) - Form phê duyệt
+  ✓ screenshot_page080_img03.png (1290x568) - Lịch sử phê duyệt
+
+NHÓM 6: BÁO CÁO & PHÂN TÍCH (Trang 91-120)
+------------------------------------------
+Mục đích: Hiển thị báo cáo, biểu đồ, phân tích dữ liệu
+Khuyến nghị:
+  ✓ screenshot_page106_img04.png (1920x817) - Báo cáo tổng hợp
+  ✓ screenshot_page109_img03.png (1920x817) - Biểu đồ phân tích
+  ✓ screenshot_page115_img05.png (1564x921) - Báo cáo chi tiết
+  ✓ screenshot_page107_img03.png (1902x834) - Thống kê
+  ✓ screenshot_page108_img03.png (1857x845) - Biểu đồ doanh số
+
+================================================================================
+HÌNH ẢNH ĐẶC BIỆT CHẤT LƯỢNG CAO
+================================================================================
+
+1. screenshot_page071_img04.png (2500x1094)
+   - Kích thước lớn nhất, phù hợp làm banner
+   - Hiển thị workflow phê duyệt toàn bộ
+   - Độ phân giải cao, chi tiết rõ ràng
+
+2. screenshot_page115_img04.png (1920x918)
+   - Giao diện hiện đại, bố cục cân đối
+   - Hiển thị danh sách chờ duyệt
+   - Phù hợp làm hero image
+
+3. screenshot_page113_img04.png (1917x898)
+   - Quy trình duyệt chi tiết
+   - Bố cục rõ ràng, dễ hiểu
+   - Phù hợp làm case study
+
+4. screenshot_page043_img04.png (1920x871)
+   - Quản lý khách hàng
+   - Giao diện sạch, chuyên nghiệp
+   - Phù hợp làm feature showcase
+
+5. screenshot_page065_img04.png (1898x878)
+   - Quản lý dịch vụ
+   - Bố cục logic, dễ sử dụng
+   - Phù hợp làm product demo
+
+================================================================================
+GỢI Ý SỬ DỤNG TRONG PORTFOLIO
+================================================================================
+
+CÁCH 1: Tạo Case Study
+- Chọn 3-5 screenshot từ các nhóm khác nhau
+- Sắp xếp theo quy trình: Dashboard → Kho → Bán hàng → Dịch vụ → Phê duyệt
+- Thêm mô tả ngắn cho mỗi ảnh
+
+CÁCH 2: Tạo Feature Showcase
+- Chọn 1 screenshot lớn nhất (2500x1094) làm hero image
+- Thêm 4-6 screenshot nhỏ hơn làm supporting images
+- Sắp xếp theo chức năng chính
+
+CÁCH 3: Tạo Comparison Slider
+- Chọn 2-3 cặp ảnh trước/sau
+- Ví dụ: Danh sách → Chi tiết → Báo cáo
+- Tạo interactive slider để so sánh
+
+CÁCH 4: Tạo Interactive Demo
+- Chọn 8-10 screenshot từ các nhóm
+- Tạo carousel hoặc gallery
+- Thêm navigation buttons để duyệt qua các chức năng
+
+================================================================================
+KHUYẾN NGHỊ CHỈNH SỬA
+================================================================================
+
+Để làm đẹp portfolio thêm:
+1. Crop các ảnh để loại bỏ header/footer nếu cần
+2. Thêm blur hoặc watermark nếu chứa dữ liệu nhạy cảm
+3. Tạo thumbnail (300x200) cho gallery view
+4. Tạo full-size (1920x1080) cho modal/lightbox
+5. Thêm captions mô tả chức năng của mỗi ảnh
+
+================================================================================
+DANH SÁCH ĐỦ 30 SCREENSHOT CHẤT LƯỢNG CAO
+================================================================================
+
+Trang 1-10 (Dashboard):
+  1. screenshot_page004_img03.png
+  2. screenshot_page008_img03.png
+  3. screenshot_page009_img08.png
+
+Trang 11-30 (Kho):
+  4. screenshot_page021_img03.png
+  5. screenshot_page022_img03.png
+  6. screenshot_page025_img03.png
+  7. screenshot_page026_img03.png
+  8. screenshot_page030_img04.png
+  9. screenshot_page035_img03.png
+
+Trang 31-50 (Bán hàng):
+  10. screenshot_page036_img03.png
+  11. screenshot_page040_img04.png
+  12. screenshot_page043_img04.png
+  13. screenshot_page045_img03.png
+  14. screenshot_page049_img03.png
+  15. screenshot_page031_img04.png
+
+Trang 51-70 (Dịch vụ):
+  16. screenshot_page057_img03.png
+  17. screenshot_page060_img04.png
+  18. screenshot_page062_img04.png
+  19. screenshot_page064_img03.png
+  20. screenshot_page065_img04.png
+
+Trang 71-90 (Phê duyệt):
+  21. screenshot_page071_img04.png ⭐ (Lớn nhất)
+  22. screenshot_page078_img03.png
+  23. screenshot_page080_img03.png
+  24. screenshot_page085_img03.png
+  25. screenshot_page090_img03.png
+
+Trang 91-120 (Báo cáo):
+  26. screenshot_page106_img04.png
+  27. screenshot_page107_img03.png
+  28. screenshot_page108_img03.png
+  29. screenshot_page109_img03.png
+  30. screenshot_page115_img04.png ⭐ (Chất lượng cao)
+
+================================================================================

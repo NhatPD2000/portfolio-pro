@@ -1,0 +1,82 @@
+<svg width="280" height="200" viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Isometric people/communication -->
+  <defs>
+    <linearGradient id="soft-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#FBBF24;stop-opacity:0.7" />
+    </linearGradient>
+    <linearGradient id="soft-grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D97706;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:0.6" />
+    </linearGradient>
+    <filter id="soft-glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base platform -->
+  <path d="M60 160 L140 120 L220 160 L140 200 Z" fill="#451A03" opacity="0.3"/>
+
+  <!-- Back person -->
+  <g opacity="0.5" filter="url(#soft-glow)">
+    <circle cx="210" cy="80" r="14" fill="url(#soft-grad2)"/>
+    <path d="M210 94 L195 130 L225 130 Z" fill="url(#soft-grad2)" opacity="0.8"/>
+    <path d="M195 130 L210 150 L225 130 Z" fill="#D97706" opacity="0.6"/>
+  </g>
+
+  <!-- Left person -->
+  <g filter="url(#soft-glow)">
+    <circle cx="80" cy="90" r="16" fill="url(#soft-grad1)" opacity="0.9"/>
+    <path d="M80 106 L63 145 L97 145 Z" fill="url(#soft-grad1)" opacity="0.85"/>
+    <path d="M63 145 L80 170 L97 145 Z" fill="#F59E0B" opacity="0.7"/>
+  </g>
+
+  <!-- Center person (main) -->
+  <g filter="url(#soft-glow)">
+    <circle cx="140" cy="100" r="18" fill="url(#soft-grad1)"/>
+    <path d="M140 118 L120 160 L160 160 Z" fill="url(#soft-grad1)" opacity="0.9"/>
+    <path d="M120 160 L140 190 L160 160 Z" fill="#FBBF24" opacity="0.8"/>
+  </g>
+
+  <!-- Right person -->
+  <g filter="url(#soft-glow)">
+    <circle cx="200" cy="110" r="16" fill="url(#soft-grad1)" opacity="0.9"/>
+    <path d="M200 126 L183 165 L217 165 Z" fill="url(#soft-grad1)" opacity="0.85"/>
+    <path d="M183 165 L200 190 L217 165 Z" fill="#F59E0B" opacity="0.7"/>
+  </g>
+
+  <!-- Communication lines -->
+  <g opacity="0.6">
+    <path d="M96 110 Q118 105 138 110" stroke="#FCD34D" strokeWidth="2" fill="none" strokeDasharray="4 4"/>
+    <path d="M158 115 Q179 115 195 120" stroke="#FCD34D" strokeWidth="2" fill="none" strokeDasharray="4 4"/>
+    <path d="M125 140 Q132 130 140 135" stroke="#FCD34D" strokeWidth="1.5" fill="none" strokeDasharray="3 3"/>
+    <path d="M155 140 Q165 130 175 140" stroke="#FCD34D" strokeWidth="1.5" fill="none" strokeDasharray="3 3"/>
+  </g>
+
+  <!-- Speech bubbles -->
+  <g opacity="0.7">
+    <path d="M50 70 Q50 60 60 60 L90 60 Q100 60 100 70 L100 85 Q100 95 90 95 L70 95 L65 100 L65 95 L60 95 Q50 95 50 85 Z" fill="#FCD34D" opacity="0.3" stroke="#FBBF24" strokeWidth="1.5"/>
+    <line x1="60" y1="72" x2="90" y2="72" stroke="#FBBF24" strokeWidth="1.5" opacity="0.6"/>
+    <line x1="60" y1="80" x2="85" y2="80" stroke="#FBBF24" strokeWidth="1.5" opacity="0.5"/>
+  </g>
+
+  <g opacity="0.6">
+    <path d="M230 100 Q230 90 240 90 L265 90 Q275 90 275 100 L275 115 Q275 125 265 125 L250 125 L245 130 L245 125 L240 125 Q230 125 230 115 Z" fill="#FCD34D" opacity="0.3" stroke="#FBBF24" strokeWidth="1.5"/>
+    <line x1="240" y1="102" x2="265" y2="102" stroke="#FBBF24" strokeWidth="1.5" opacity="0.6"/>
+    <line x1="240" y1="110" x2="260" y2="110" stroke="#FBBF24" strokeWidth="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- Particles -->
+  <circle cx="40" cy="100" r="2" fill="#FCD34D" opacity="0.7"/>
+  <circle cx="250" cy="70" r="2" fill="#FCD34D" opacity="0.6"/>
+  <circle cx="110" cy="60" r="1.5" fill="#FBBF24" opacity="0.8"/>
+  <circle cx="170" cy="70" r="1.5" fill="#FBBF24" opacity="0.7"/>
+
+  <!-- Connection nodes -->
+  <circle cx="118" cy="105" r="3" fill="#FCD34D" opacity="0.8"/>
+  <circle cx="162" cy="115" r="3" fill="#FCD34D" opacity="0.8"/>
+</svg>

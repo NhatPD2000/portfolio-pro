@@ -1,0 +1,421 @@
+================================================================================
+DỰ ÁN VT TECHNICAL - TÀI LIỆU YÊU CẦU CHI TIẾT
+Triển khai Hệ thống ERP (Sales, Inventory, Service, Approval)
+================================================================================
+
+I. THÔNG TIN DỰ ÁN
+================================================================================
+
+Tên dự án: Triển khai Hệ thống ERP cho VT Technical
+Khách hàng: VT Technical Co., Ltd.
+Lĩnh vực: Cung cấp giải pháp kỹ thuật
+Thời gian: 5 tháng (Tháng 1 - Tháng 5, 2026)
+Ngân sách: 2 tỷ VND
+Số lượng users: 50+ users
+Trạng thái: Hoàn thành thành công
+
+================================================================================
+II. YÊU CẦU CHỨC NĂNG (FUNCTIONAL REQUIREMENTS)
+================================================================================
+
+A. MODULE QUẢN LÝ BÁN HÀNG (SALES MANAGEMENT)
+--------------------------------------------------------------------------------
+
+FR-SALES-001: Quản lý khách hàng (Customer Management)
+- Tạo mới, chỉnh sửa, xóa thông tin khách hàng
+- Lưu trữ: Tên, địa chỉ, số điện thoại, email, mã số thuế
+- Phân loại khách hàng: VIP, Thường, Tiềm năng
+- Lịch sử giao dịch với khách hàng
+- Ghi chú và theo dõi tương tác
+
+FR-SALES-002: Quản lý báo giá (Quotation Management)
+- Tạo báo giá cho khách hàng
+- Tính toán tự động: Giá, chiết khấu, thuế VAT
+- Gửi báo giá qua email
+- Theo dõi trạng thái: Draft, Sent, Approved, Rejected
+- Chuyển đổi báo giá thành đơn hàng
+
+FR-SALES-003: Quản lý đơn hàng (Order Management)
+- Tạo đơn hàng từ báo giá hoặc tạo mới
+- Quản lý thông tin: Sản phẩm, số lượng, giá, khách hàng
+- Trạng thái đơn hàng: Draft, Confirmed, Processing, Delivered, Cancelled
+- Theo dõi tiến độ xử lý đơn hàng
+- Thông báo tự động cho khách hàng
+
+FR-SALES-004: Quản lý hóa đơn (Invoice Management)
+- Tạo hóa đơn từ đơn hàng
+- Tính toán thuế VAT tự động
+- In hóa đơn theo mẫu chuẩn
+- Theo dõi thanh toán: Paid, Unpaid, Partial
+- Gửi hóa đơn qua email
+
+FR-SALES-005: Báo cáo bán hàng (Sales Reporting)
+- Báo cáo doanh số theo ngày, tuần, tháng, năm
+- Báo cáo theo sản phẩm, khách hàng, nhân viên
+- Phân tích xu hướng bán hàng
+- Dashboard tổng quan
+- Export Excel, PDF
+
+--------------------------------------------------------------------------------
+B. MODULE QUẢN LÝ KHO (INVENTORY MANAGEMENT)
+--------------------------------------------------------------------------------
+
+FR-INV-001: Quản lý sản phẩm (Product Management)
+- Tạo mới, chỉnh sửa, xóa sản phẩm
+- Thông tin: Mã, tên, mô tả, đơn vị tính, giá
+- Phân loại sản phẩm theo danh mục
+- Hình ảnh sản phẩm
+- Barcode/QR code
+
+FR-INV-002: Quản lý kho (Warehouse Management)
+- Quản lý nhiều kho
+- Vị trí lưu trữ trong kho
+- Phân quyền truy cập kho
+- Chuyển kho giữa các chi nhánh
+
+FR-INV-003: Quản lý tồn kho (Stock Management)
+- Theo dõi tồn kho real-time
+- Cảnh báo khi hàng sắp hết (minimum stock level)
+- Cảnh báo khi tồn kho quá nhiều (maximum stock level)
+- Lịch sử nhập/xuất kho
+- Kiểm kê định kỳ
+
+FR-INV-004: Nhập kho (Stock In)
+- Tạo phiếu nhập kho
+- Nhập từ nhà cung cấp
+- Nhập từ sản xuất
+- Nhập điều chỉnh
+- In phiếu nhập kho
+
+FR-INV-005: Xuất kho (Stock Out)
+- Tạo phiếu xuất kho
+- Xuất cho đơn hàng
+- Xuất điều chỉnh
+- Xuất hủy
+- In phiếu xuất kho
+
+FR-INV-006: Báo cáo kho (Inventory Reporting)
+- Báo cáo tồn kho theo thời gian
+- Báo cáo nhập/xuất kho
+- Báo cáo giá trị tồn kho
+- Báo cáo hàng tồn kho lâu
+- Báo cáo hàng sắp hết
+
+--------------------------------------------------------------------------------
+C. MODULE QUẢN LÝ DỊCH VỤ (SERVICE MANAGEMENT)
+--------------------------------------------------------------------------------
+
+FR-SVC-001: Quản lý hợp đồng dịch vụ (Service Contract)
+- Tạo hợp đồng dịch vụ cho khách hàng
+- Thông tin: Loại dịch vụ, thời hạn, giá trị
+- Theo dõi trạng thái: Active, Expired, Cancelled
+- Gia hạn hợp đồng tự động
+- Thông báo trước khi hết hạn
+
+FR-SVC-002: Quản lý bảo hành (Warranty Management)
+- Đăng ký bảo hành cho sản phẩm
+- Theo dõi thời hạn bảo hành
+- Lịch sử bảo hành
+- Thông báo hết hạn bảo hành
+
+FR-SVC-003: Quản lý ticket (Ticket System)
+- Khách hàng tạo ticket yêu cầu hỗ trợ
+- Phân loại ticket: Technical, Sales, General
+- Ưu tiên: Low, Medium, High, Urgent
+- Gán ticket cho nhân viên
+- Theo dõi trạng thái: New, In Progress, Resolved, Closed
+- Thời gian xử lý (SLA)
+
+FR-SVC-004: Lịch sử dịch vụ (Service History)
+- Lưu trữ tất cả dịch vụ đã cung cấp
+- Theo dõi theo khách hàng
+- Ghi chú chi tiết
+- Đánh giá chất lượng dịch vụ
+
+FR-SVC-005: Báo cáo dịch vụ (Service Reporting)
+- Báo cáo số lượng ticket theo thời gian
+- Báo cáo thời gian xử lý trung bình
+- Báo cáo theo nhân viên
+- Báo cáo hợp đồng sắp hết hạn
+- KPI dịch vụ
+
+--------------------------------------------------------------------------------
+D. MODULE PHÊ DUYỆT (APPROVAL WORKFLOW)
+--------------------------------------------------------------------------------
+
+FR-APR-001: Workflow phê duyệt đơn hàng
+- Đơn hàng > 50 triệu: Cần phê duyệt Manager
+- Đơn hàng > 200 triệu: Cần phê duyệt Director
+- Thông báo tự động cho người phê duyệt
+- Lịch sử phê duyệt
+- Từ chối với lý do
+
+FR-APR-002: Workflow phê duyệt hóa đơn
+- Hóa đơn > 100 triệu: Cần phê duyệt Accounting Manager
+- Thông báo tự động
+- Audit trail đầy đủ
+
+FR-APR-003: Workflow phê duyệt xuất kho
+- Xuất kho > 100 sản phẩm: Cần phê duyệt Warehouse Manager
+- Xuất kho điều chỉnh: Cần phê duyệt Director
+- Lý do xuất kho
+
+FR-APR-004: Quản lý quyền hạn (Permission Management)
+- Phân quyền theo vai trò: Admin, Manager, Staff, Viewer
+- Quyền truy cập module
+- Quyền thao tác: Create, Read, Update, Delete
+- Quyền phê duyệt
+
+FR-APR-005: Audit Trail
+- Lưu trữ tất cả thao tác
+- Thông tin: User, Action, Time, Before/After
+- Không thể xóa audit log
+- Báo cáo audit
+
+--------------------------------------------------------------------------------
+E. MODULE BÁO CÁO & PHÂN TÍCH (REPORTING & ANALYTICS)
+--------------------------------------------------------------------------------
+
+FR-RPT-001: Dashboard tổng quan
+- Doanh số hôm nay, tuần này, tháng này
+- Số đơn hàng mới
+- Tồn kho hiện tại
+- Ticket chưa xử lý
+- Biểu đồ xu hướng
+
+FR-RPT-002: Báo cáo tài chính
+- Báo cáo doanh thu
+- Báo cáo công nợ
+- Báo cáo lợi nhuận
+- So sánh theo thời gian
+
+FR-RPT-003: Báo cáo khách hàng
+- Top khách hàng theo doanh số
+- Khách hàng mới
+- Khách hàng lâu không mua
+- Phân tích hành vi khách hàng
+
+FR-RPT-004: Báo cáo sản phẩm
+- Top sản phẩm bán chạy
+- Sản phẩm tồn kho nhiều
+- Sản phẩm sắp hết
+- Phân tích xu hướng sản phẩm
+
+FR-RPT-005: Export dữ liệu
+- Export Excel
+- Export PDF
+- Export CSV
+- Lên lịch gửi báo cáo tự động
+
+================================================================================
+III. YÊU CẦU PHI CHỨC NĂNG (NON-FUNCTIONAL REQUIREMENTS)
+================================================================================
+
+NFR-001: Hiệu suất (Performance)
+- Thời gian tải trang < 3 giây
+- Hỗ trợ 1000+ concurrent users
+- Database query < 1 giây
+- Uptime 99.9%
+
+NFR-002: Bảo mật (Security)
+- Mã hóa dữ liệu nhạy cảm
+- HTTPS cho tất cả kết nối
+- Two-factor authentication (2FA)
+- Session timeout sau 30 phút không hoạt động
+- Backup dữ liệu hàng ngày
+
+NFR-003: Khả năng mở rộng (Scalability)
+- Hỗ trợ thêm users dễ dàng
+- Hỗ trợ thêm modules
+- Hỗ trợ multi-company
+- Hỗ trợ multi-language
+
+NFR-004: Tính khả dụng (Availability)
+- Uptime 99.9%
+- Backup tự động hàng ngày
+- Disaster recovery plan
+- Redundancy cho critical components
+
+NFR-005: Khả năng sử dụng (Usability)
+- Giao diện thân thiện, dễ sử dụng
+- Responsive design (desktop, tablet, mobile)
+- Hỗ trợ tiếng Việt
+- Help documentation đầy đủ
+
+NFR-006: Tích hợp (Integration)
+- API RESTful
+- Tích hợp với hệ thống kế toán
+- Tích hợp với email
+- Tích hợp với SMS gateway
+
+NFR-007: Tuân thủ (Compliance)
+- Tuân thủ luật thuế Việt Nam
+- Tuân thủ GDPR (nếu có khách hàng EU)
+- Tuân thủ chuẩn hóa đơn điện tử
+
+================================================================================
+IV. KIẾN TRÚC HỆ THỐNG
+================================================================================
+
+A. Công nghệ sử dụng:
+- ERP Platform: Odoo 16 Community Edition
+- Database: PostgreSQL 14
+- Backend: Python 3.10
+- Frontend: JavaScript, XML, QWeb
+- Server: Ubuntu 22.04 LTS
+- Web Server: Nginx
+- Cloud: AWS (EC2, RDS, S3)
+
+B. Kiến trúc triển khai:
+- Application Server: AWS EC2 (t3.large)
+- Database Server: AWS RDS PostgreSQL
+- File Storage: AWS S3
+- Load Balancer: AWS ELB
+- Backup: AWS S3 + Daily snapshots
+
+C. Bảo mật:
+- SSL Certificate (Let's Encrypt)
+- Firewall: AWS Security Groups
+- VPN: OpenVPN
+- 2FA: Google Authenticator
+
+================================================================================
+V. KẾ HOẠCH TRIỂN KHAI
+================================================================================
+
+Phase 1 (Tháng 1-2): Chuẩn bị & Cài đặt
+- Tuần 1-2: Requirements gathering, analysis
+- Tuần 3-4: System design, architecture
+- Tuần 5-6: Server setup, Odoo installation
+- Tuần 7-8: Data migration planning
+
+Phase 2 (Tháng 3): Sales & Inventory
+- Tuần 1-2: Sales module configuration
+- Tuần 3-4: Inventory module configuration
+- Testing & bug fixing
+
+Phase 3 (Tháng 4): Service & Approval
+- Tuần 1-2: Service module configuration
+- Tuần 3-4: Approval workflow setup
+- Testing & bug fixing
+
+Phase 4 (Tháng 5): Testing, Training, Go-live
+- Tuần 1: Integration testing
+- Tuần 2: UAT (User Acceptance Testing)
+- Tuần 3: Training (5 sessions)
+- Tuần 4: Go-live & support
+
+================================================================================
+VI. TRAINING & CHANGE MANAGEMENT
+================================================================================
+
+A. Training Plan:
+- Session 1: System Overview (2 giờ)
+- Session 2: Sales Module (3 giờ)
+- Session 3: Inventory Module (3 giờ)
+- Session 4: Service Module (2 giờ)
+- Session 5: Reporting & Admin (2 giờ)
+
+B. Training Materials:
+- User Guide (200+ slides)
+- Video tutorials
+- Quick reference cards
+- FAQs document
+
+C. Change Management:
+- Communication plan
+- Stakeholder engagement
+- Resistance management
+- Feedback collection
+
+================================================================================
+VII. TESTING STRATEGY
+================================================================================
+
+A. Functional Testing:
+- 200+ test cases
+- Coverage: All modules
+- Test data preparation
+- Bug tracking & fixing
+
+B. Integration Testing:
+- Data flow between modules
+- API testing
+- Third-party integration testing
+
+C. Performance Testing:
+- Load testing (1000+ users)
+- Stress testing
+- Database performance
+
+D. User Acceptance Testing (UAT):
+- 30+ users from all departments
+- Real-world scenarios
+- Feedback collection
+- Sign-off
+
+================================================================================
+VIII. SUPPORT & MAINTENANCE
+================================================================================
+
+A. Go-live Support:
+- 24/7 support trong 2 tuần đầu
+- On-site support team
+- Hotline hỗ trợ
+- Remote support
+
+B. Post Go-live:
+- Monthly maintenance
+- Bug fixing
+- Feature enhancement
+- System optimization
+
+C. SLA (Service Level Agreement):
+- Response time: < 4 giờ
+- Resolution time: < 24 giờ (Critical), < 48 giờ (High)
+- Uptime guarantee: 99.9%
+
+================================================================================
+IX. RỦI RO & GIẢI PHÁP
+================================================================================
+
+Risk 1: Kháng cự thay đổi từ users
+- Giải pháp: Change management mạnh mẽ, training kỹ lưỡng
+
+Risk 2: Data migration issues
+- Giải pháp: Testing kỹ, backup đầy đủ, rollback plan
+
+Risk 3: Performance issues
+- Giải pháp: Load testing trước, optimize database, scale infrastructure
+
+Risk 4: Integration issues
+- Giải pháp: API testing kỹ, fallback mechanism
+
+Risk 5: Budget overrun
+- Giải pháp: Phân chia phases rõ ràng, control scope
+
+================================================================================
+X. KẾT QUẢ ĐẠT ĐƯỢC
+================================================================================
+
+Định lượng:
+- Giảm 60% thời gian xử lý đơn hàng (5 ngày → 2 ngày)
+- Tăng 14% độ chính xác dữ liệu (85% → 99%)
+- Giảm 87% tồn kho không khớp (15% → 2%)
+- Giảm 80% thời gian phê duyệt (3 ngày → 8 giờ)
+- Giảm 30% chi phí vận hành
+- Tăng 25% doanh số bán hàng
+- Tăng 22% tỷ lệ khách hàng hài lòng (70% → 92%)
+
+Định tính:
+- Hệ thống tập trung, dễ quản lý
+- Quy trình chuẩn hóa
+- Báo cáo real-time
+- Tăng năng suất nhân viên
+- Cải thiện dịch vụ khách hàng
+
+ROI: 8 tháng
+
+================================================================================
+KẾT THÚC TÀI LIỆU
+================================================================================

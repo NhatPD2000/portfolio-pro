@@ -1,0 +1,62 @@
+<svg width="280" height="200" viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Isometric wireframe screens -->
+  <defs>
+    <linearGradient id="design-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A855F7;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="design-grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C084FC;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#A855F7;stop-opacity:0.5" />
+    </linearGradient>
+    <filter id="design-glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base platform -->
+  <path d="M60 150 L140 110 L220 150 L140 190 Z" fill="#1A0533" opacity="0.3"/>
+
+  <!-- Back screen -->
+  <g opacity="0.5" filter="url(#design-glow)">
+    <path d="M50 70 L110 40 L110 110 L50 140 Z" stroke="#C084FC" strokeWidth="1.5" fill="url(#design-grad2)" opacity="0.3"/>
+    <path d="M110 40 L170 70 L170 140 L110 110 Z" stroke="#C084FC" strokeWidth="1.5" fill="#A855F7" opacity="0.2"/>
+    <path d="M50 70 L110 40 L170 70 L110 100 Z" stroke="#C084FC" strokeWidth="1.5" fill="url(#design-grad1)" opacity="0.25"/>
+  </g>
+
+  <!-- Front screen (main) -->
+  <g filter="url(#design-glow)">
+    <path d="M90 90 L150 60 L150 140 L90 170 Z" stroke="#EC4899" strokeWidth="2" fill="url(#design-grad1)" opacity="0.4"/>
+    <path d="M150 60 L210 90 L210 170 L150 140 Z" stroke="#EC4899" strokeWidth="2" fill="#C084FC" opacity="0.5"/>
+    <path d="M90 90 L150 60 L210 90 L150 120 Z" stroke="#EC4899" strokeWidth="2" fill="url(#design-grad2)" opacity="0.45"/>
+
+    <!-- Wireframe elements on screen -->
+    <line x1="105" y1="105" x2="135" y2="90" stroke="#F0ABFC" strokeWidth="1.5" opacity="0.8"/>
+    <line x1="105" y1="115" x2="135" y2="100" stroke="#F0ABFC" strokeWidth="1.5" opacity="0.7"/>
+    <rect x="105" y="125" width="25" height="20" stroke="#F0ABFC" strokeWidth="1.5" fill="none" opacity="0.6" transform="skewY(-15)"/>
+
+    <!-- UI elements -->
+    <circle cx="165" cy="100" r="8" stroke="#F0ABFC" strokeWidth="1.5" fill="none" opacity="0.7"/>
+    <path d="M160 120 L170 115 L180 120 L170 125 Z" stroke="#F0ABFC" strokeWidth="1.5" fill="#EC4899" opacity="0.5"/>
+
+    <!-- Cross icon -->
+    <line x1="175" y1="135" x2="185" y2="145" stroke="#F0ABFC" strokeWidth="1.5" opacity="0.6"/>
+    <line x1="185" y1="135" x2="175" y2="145" stroke="#F0ABFC" strokeWidth="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Floating design tools -->
+  <g opacity="0.6">
+    <circle cx="45" cy="100" r="4" stroke="#C084FC" strokeWidth="1.5" fill="none"/>
+    <path d="M230 110 L235 105 L240 110 L235 115 Z" fill="#EC4899" opacity="0.7"/>
+  </g>
+
+  <!-- Particles -->
+  <circle cx="35" cy="70" r="2" fill="#F0ABFC" opacity="0.6"/>
+  <circle cx="245" cy="100" r="2" fill="#F0ABFC" opacity="0.5"/>
+  <circle cx="60" cy="50" r="1.5" fill="#C084FC" opacity="0.7"/>
+  <circle cx="220" cy="60" r="1.5" fill="#C084FC" opacity="0.6"/>
+</svg>
